@@ -1,0 +1,145 @@
+.off-canvas-wrapper{
+  height: 100vh;
+}
+#open-canvas{
+  position: absolute;
+  z-index: 5;
+  background: transparent;
+  color: $medium-gray;
+}
+.position-left{
+  overflow-x: hidden;
+}
+.off-canvas .close-button, #open-canvas{
+  text-transform: uppercase;
+  font-size: 11px;
+  z-index: 5;
+}
+.off-canvas .close-button{
+  color: $medium-gray;
+  margin: 8px 0 15px 0;
+  padding: 0.85em 1em;
+}
+.js-off-canvas-overlay, .off-canvas{
+  background: transparent;
+}
+#triangle-topleft, #triangle-topright {
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 150px solid lighten( black, 20% );
+}
+#triangle-topleft{
+  border-right: 70vw solid transparent;
+  left: 0;
+}
+#triangle-topright {
+  border-left: 70vw solid transparent;
+  right: 0;
+}
+.off-canvas .h1{
+  margin-top: 100px;
+  text-align: center;
+  letter-spacing: 7px;
+}
+.off-canvas .h6, .off-canvas .h5{
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+#developer-projects{
+  margin: 0 5.5em;
+  .dp-cell{
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 1 1 50%;
+    margin: 25px 0;
+    &:nth-child(even){
+      flex-direction: row-reverse;
+    }
+    img{
+      width: 50%;
+      padding: 5px;
+      object-fit: cover;
+      border: 1px solid $white;
+    }
+    .dp-cell-content{
+      width: 50%;
+      padding: 5px 5px 5px 25px;
+      .h5{
+        border-bottom: 1px solid $white;
+        width: inherit;
+        margin: 0 auto 20px;
+      }
+      .h6{
+        text-align: left;
+      }
+      .h5, .h6{
+        @include heading;
+      }
+      p, li{
+        color: $light-gray
+      }
+      a{
+        position: relative;
+        display: block;
+        text-align: center;
+      }
+      ul{
+        list-style-type: disc;
+        padding-left: 30px;
+      }
+    }
+  }
+}
+#designer-projects{
+  margin: 0 5.5em;
+  display: flex;
+  flex-wrap: nowrap;
+  >div{
+    position: relative;
+    margin: 30px;
+    overflow: hidden;
+
+    &:hover{
+      .desp-content{
+        height: 100%;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+      }
+      img{
+        filter: blur(6px);
+      }
+    }
+    img{
+      cursor: pointer;
+    }
+    a{
+      position: relative;
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .desp-content{
+      transition: all 400ms ease-in;
+      position: absolute;
+      top: 410px;
+      .h5, .h6{
+        @include heading;
+      }
+      .h6{
+        text-align: left;
+      }
+      ul{
+        list-style-type: disc;
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
+
+
+
+

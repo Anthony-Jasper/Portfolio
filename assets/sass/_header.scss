@@ -1,0 +1,320 @@
+/*
+----------------------------------------------------------------------
+Header
+----------------------------------------------------------------------
+*/
+.c2a-button{
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  span{
+    position: relative;
+    right: -30px;
+    margin-top: -2px;
+    font-size: 35px;
+    text-shadow: 0px 0px 6px $secondary-color;
+    transition: all 300ms ease-out;
+    animation: buttonFlash 1.5s infinite ease-out;
+    &:last-of-type{
+      right: 30px;
+      margin-bottom: -5.5px;
+      transform: rotate(180deg);
+    }
+  }
+  p{
+    position: relative;
+    margin: 0;
+    font-size: 30px;
+    opacity: 0;
+  }
+  &:focus, &:hover{
+    color: $white;
+  }
+}
+.c2a-button.expand-button{
+  span{
+    right: 0px;
+    transition: all 300ms ease-out;
+    &:last-of-type{
+      right: 0px;
+    }
+  }
+  p{
+    opacity: 1;
+    transition: all 500ms ease-out;
+  }
+}
+.main-header{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  h1, h2{
+    position: relative;
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    letter-spacing: 11px;
+    font-weight: bold;
+    text-align: center;
+    @include heading;
+  }
+  h2{
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 4px;
+  }
+  h1{
+    &:after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 90px;
+      bottom: -58px;
+      left: 0;
+      border-top: 4px;
+      border-top-color: #131220;
+      border-radius: 50%;
+      border-top-style: solid;
+    }
+  }
+  
+  #hamburger.is-active .line:nth-child(2) {
+    opacity: 0;
+  }
+  #hamburger.is-active .line:nth-child(1) {
+    -webkit-transform: translateY(6px) rotate(45deg);
+    -ms-transform: translateY(6px) rotate(45deg);
+    -o-transform: translateY(6px) rotate(45deg);
+    transform: translateY(6px) rotate(45deg);
+  }
+  #hamburger.is-active .line:nth-child(3) {
+    -webkit-transform: translateY(-6px) rotate(-45deg);
+    -ms-transform: translateY(-6px) rotate(-45deg);
+    -o-transform: translateY(-6px) rotate(-45deg);
+    transform: translateY(-6px) rotate(-45deg);
+  }
+  #hamburger-menu{
+    position: fixed;
+    bottom: 0px;
+    left: 10px;
+    z-index: 10;
+    &:hover{
+      .line{
+        box-shadow: 0px 0px 3px 1px $secondary-color;
+      }
+    }
+  }
+  #hamburger.is-active .line{
+    width: 15px;
+  }
+  #hamburger.is-active{
+    height: 44px;
+  }
+  #hamburger {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    .line {
+      width: 25px;
+      height: 1px;
+      margin: 5px auto;
+      background-color: #fefefe;
+      display: block;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  #boring-nav{
+    position: fixed;
+    z-index: 9;
+    width: 0px;
+    height: 60px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid $primary-color;
+    box-shadow: 0px 0px 3px 0px $primary-color;
+    border-bottom: none;
+    border-right: none;
+    transition: all 500ms ease-in;
+    opacity: 0;
+    .menu{
+      height: 100%;
+      justify-content: space-evenly;
+      align-items: center;
+      opacity: 0;
+      li{
+        display: none;
+        a{
+          padding: 1.2rem 0.7rem;
+          color: $white;    
+          position: relative;
+          text-transform: uppercase;
+          font-size: 14px;
+          &:hover{
+           @include heading;
+          }
+        }
+      }
+    }
+  }
+  #boring-nav.expand-nav{
+    width: 550px;
+    opacity: 1;
+    animation: Flicker 500ms 1s ease-in;
+    transition: all 500ms ease-in;
+    padding-left: 30px;
+    .menu{
+      opacity: 1;
+      transition: opacity 500ms 250ms ease-in;
+      li{
+        display: block;
+      }
+    }
+  }
+  .grid-container{
+    position: absolute;
+    width: 100%;
+    .planet-nav{
+      .cell{
+        div{
+          cursor: pointer;
+          &:hover{
+            box-shadow: 0px 0px 12px 0px $secondary-color !important;
+          }
+        }
+      }
+      #home-nav{
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        
+        #home{
+          position: relative;
+          background-image: url(assets/images/earthMap.jpg);
+          width: 530px;
+          height: 530px;
+          margin: 0 auto;
+          border-radius: 50%;
+          background-size: cover;
+          animation: rotatehome 12s infinite linear;
+          box-shadow: inset 0px -1px 7px -4px #ffffff;
+          &:hover{
+            border-radius: 50%;
+            box-shadow: 0px 0px 12px 0px $secondary-color !important;
+          }
+          &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            border-radius: 50%;
+            background: radial-gradient(circle at top, rgba(0, 0, 0, 0.59) 15%, rgba(0, 0, 0, 0.23) 80%, rgba(255, 255, 255, 0.49) 100%);
+            cursor: pointer;
+
+          }
+        }
+      }
+      #about, #cloudyne, #experience, #contact{
+        position: relative;
+        top: 15vh;
+        border-radius: 50%;
+        margin: 0 auto;
+        background-size: cover;
+        box-shadow: inset 0px -2px 6px 0px #636363;
+      }
+      #about{
+        background-image: url(assets/images/marsMap.jpg);
+        width: 50px;
+        height: 50px;
+        animation: rotateabout 9s infinite linear;
+      }
+      #cloudyne{
+        background-image: url(assets/images/jupiterMap.jpg);
+        width: 100px;
+        height: 100px;
+        animation: rotatecloudyne 5s infinite linear;
+      }
+      #experience{
+        background-image: url(assets/images/saturnMap.jpg);
+        width: 75px;
+        height: 75px;
+        animation: rotateexperience 4s infinite linear;
+      }
+      #contact{
+        background-image: url(assets/images/plutoMap.jpg);
+        width: 25px;
+        height: 25px;
+        animation: rotatecontact 15s infinite linear;
+      }
+    }
+  }
+  #alien{
+    width: 60px;
+    position: absolute;
+    bottom: -9px;
+    right: -6px;
+    -ms-transform: rotate(30deg);
+    transform: rotate(-30deg);
+  }
+}
+#star-container{
+  position: fixed;
+  width: 100%;
+  height: 150vh;
+  top: -35%;
+  transform: rotateZ(45deg);
+}
+.shooting-star {
+  position: absolute;
+  top: 68%;
+  left: 50px;
+  height: 1px;
+  background: linear-gradient(-45deg, #5f91ff, rgba(0,0,255,0));
+  border-radius: 50%;
+  filter: drop-shadow(0 0 6px $gradient-bblue);
+  animation: tail ease-in-out infinite, shooting ease-in-out infinite;
+  &:before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 0;
+    height: 1px;
+    background: linear-gradient(-45deg, rgba(0,0,255,0), #5f91ff, rgba(0,0,255,0));
+    -ms-transform: translateX(50%) rotate(45deg);
+    transform: translateX(50%) rotateZ(45deg);
+    border-radius: 50%;
+    animation: shining ease-in-out infinite;
+  }
+  &:nth-of-type(2){
+    background: linear-gradient(-45deg, rgba(139, 144, 156, 0.3), rgba(0, 0, 255, 0));
+    &:before{
+      background: linear-gradient(-45deg, rgba(0,0,255,0), rgba(139, 144, 156, 0.3), rgba(0,0,255,0));
+    }
+  }
+  &:nth-of-type(3){
+    background: linear-gradient(-45deg, rgba(63, 79, 113, 0.5), rgba(0, 0, 255, 0));
+    &:before{
+      background: linear-gradient(-45deg, rgba(0,0,255,0), rgba(63, 79, 113, 0.5), rgba(0,0,255,0));
+    }
+  }
+  &:nth-of-type(4){
+    background: linear-gradient(-45deg, rgba(139, 144, 156, 0.6), rgba(0, 0, 255, 0));
+    &:before{
+      background: linear-gradient(-45deg, rgba(0,0,255,0), rgba(139, 144, 156, 0.6), rgba(0,0,255,0));
+    }
+  }
+  &:nth-of-type(5){
+    background: linear-gradient(-45deg, rgba(139, 144, 156, 0.8), rgba(0, 0, 255, 0));
+    &:before{
+      background: linear-gradient(-45deg, rgba(0,0,255,0), rgba(139, 144, 156, 0.8), rgba(0,0,255,0));
+    }
+  }
+}

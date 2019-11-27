@@ -1,0 +1,85 @@
+/*
+----------------------------------------------------------------------
+Combined Sections
+----------------------------------------------------------------------
+*/
+.section-imp{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+#about-sectionBG, #cloudyne-sectionBG, #experience-sectionBG, #contact-sectionBG{
+  @include section-planets;
+}
+#about-section .orbit, #previous-work, #cloudyne-heading, #cloudyne-section .tabs, #cloudyne-section .tabs-content, #education-wrapper, #experience-orbit, #edu-projects, #contact-wrapper {
+  @include content-margin;
+}
+#about-section .orbit-bullets,
+#experience-section .orbit-bullets {
+  display: flex;
+  text-align: left;
+  padding: 5px;
+  justify-content: space-between;
+  button {
+    position: relative;
+    width: 300px;
+    height: auto;
+    border-radius: 0;
+    background-color: transparent;
+    color: $white;
+    text-align: left;
+    cursor: pointer;
+    &:hover {
+      .material-icons-outlined {
+        color: $secondary-color;
+        box-shadow: inset 0px 0px 10px 0px $secondary-color;
+      }
+    }
+    .material-icons-outlined {
+      position: relative;
+      padding: 5px;
+      border: 1px solid $white;
+      font-size: 48px;
+      background: $gradient-tblack;
+    }
+    >div {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 37px;
+      background: #ffffff;
+    }
+  }
+  p:last-of-type {
+    display: block;
+    font-size: 14px;
+    text-align: left;
+    margin: 0;
+    color: $primary-color;
+    text-shadow: 0px 0px 15px $primary-color;
+  }
+  #orbit-bullet-heading {
+    display: inline-block;
+    margin: 0;
+    color: $gradient-tblack;
+    font-weight: 600;
+  }
+  button.is-active {
+    .material-icons-outlined {
+      color: $secondary-color;
+      box-shadow: inset 0px 0px 10px 0px $secondary-color;
+    }
+  }
+}
+#about-section .orbit-slide, #experience-section .orbit-slide{
+  border-top: 1px solid $white;
+  padding: 25px 10px 10px 0px;
+}

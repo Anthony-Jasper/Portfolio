@@ -1,0 +1,92 @@
+/* 
+TO DO
+
+Rework Text Punctuation Etc
+Convert to Webpack
+*/
+html, body {
+   margin: 0;
+   padding: 0;
+   font-size: 1em;
+   -webkit-font-smoothing: antialiased;
+}
+html.is-reveal-open.zf-has-scroll {
+  overflow: hidden;
+}
+body{
+  overflow: hidden;
+  background: linear-gradient(to bottom, $gradient-tblack 10%, #20202c 100%);
+}
+*{
+   outline: none;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4{
+   margin-bottom: 0;
+   letter-spacing: 0.4px;
+}
+p, a, input, textarea, button, li, label, span, code {
+   text-decoration: none;
+  letter-spacing: 0.4px;
+}
+ul{
+   margin: 0;
+   list-style-type: none;
+   text-decoration: none;
+}
+a{
+   cursor: pointer;
+}
+/* ---- particles.js container ---- */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  .particles-js-canvas-el {
+    position: absolute;
+  }
+}
+canvas {
+  display: block;
+  height: 700px;
+}
+/* ---- particles.js container ----*/
+.reveal-overlay{
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.75);
+}
+.reveal.full{
+  background: linear-gradient(to bottom, $gradient-tblack 10%, #20202c 100%);
+  animation: opacity 200ms linear;
+}
+.pfont{
+  font-family: 'Particle';
+}
+input::placeholder, textarea::placeholder {
+  color: rgba(72, 198, 239, 0.5);
+  text-shadow: none;
+}
+#game-section{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .h4{
+    @include heading;
+    display: block;
+  }
+  span{
+    color: $primary-color;
+    display: block;
+  }
+  ul{
+    display: inline-block;
+    margin: 0px 55px;
+    li{
+      display: inline-block;
+      text-align: center;
+      margin: 0 10px;
+      &:first-of-type{
+        margin-left: 0;
+      }
+    }
+  }
+}

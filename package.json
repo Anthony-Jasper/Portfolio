@@ -1,0 +1,71 @@
+{
+    "name": "cosmic",
+    "version": "1.0.3",
+    "description": "Description",
+    "author": "Cloudyne LTD",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mnyorba/generator-npm-wp-s-theme"
+    },
+    "bugs": "https://github.com/mnyorba/generator-npm-wp-s-theme/issues",
+    "keywords": [
+        "npm",
+        "scripts",
+        "npm scripts",
+        "watch",
+        "minify",
+        "compress"
+    ],
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "Chrome >= 45",
+        "Firefox ESR",
+        "Edge >= 12",
+        "Explorer >= 10",
+        "iOS >= 9",
+        "Safari >= 9",
+        "Android >= 4.4",
+        "Opera >= 30"
+    ],
+    "dependencies": {},
+    "scripts": {
+        "wiredep": "wiredep -s assets/sass/app.scss --dependencies",
+        "scss:style": "node-sass --include-path=node_modules/foundation-sites/scss/ --include-path=node_modules/motion-ui/src --output-style expanded --indent-type tab --indent-width 1 --source-map maps --source-map-contents false --source-map-embed true --precision 6 assets/sass/app.scss .tmp/style.css",
+        "scss": "run-p  --continue-on-error --print-label --silent --aggregate-output scss:*",
+        "autoprefixer": "postcss .tmp/*.css --use autoprefixer -d .",
+        "css": "run-s scss autoprefixer",
+        "serve": "browser-sync start --open \"external\" --host \"localhost\" --proxy \"localhost/\" --port 3000 --reload-delay 2000 --files \"*.css, js/*.js, **/*.php, languages/*.pot, !node_modules/**/*.html, !bower_components*.*\"",
+        "uglify": "mkdirp js && uglifyjs node_modules/what-input/dist/what-input.min.js node_modules/foundation-sites/dist/js/foundation.min.js assets/js/vendor/*.js assets/js/*.js -m -o js/app.js && uglifyjs node_modules/what-input/dist/what-input.min.js node_modules/foundation-sites/dist/js/foundation.min.js assets/js/vendor/*.js assets/js/*.js -m -c -o js/app.min.js",
+        "lint": "jscs assets/js",
+        "watch:css": "onchange \"assets/sass\" -- run-s scss autoprefixer",
+        "watch:js": "onchange \"assets/js\" -- run-s lint uglify",
+        "watch": "run-p serve watch:*",
+        "lang": "echo Update cosmic.pot file & wp-pot --src \"**/*.php\" --dest-file \"languages/cosmic.pot\" --domain cosmic --package \"Cosmic\" --bug-report \"https://www.cloudyne.co.uk/\" --team \"Cloudyne LTD <junk@cloudyne.co.uk>\"",
+        "imagemin": "imagemin assets/images/**/*.{jpg,png} -o images",
+        "build-css:style": "node-sass --include-path=node_modules/foundation-sites/scss/ --include-path=node_modules/motion-ui/src --output-style expanded --indent-type tab --indent-width 1 --source-map maps --source-map-contents true --precision 6 --omit-source-map-url sass/style.scss dist/cosmic/style.css",
+        "build-css": "run-p  --continue-on-error --print-label --silent --aggregate-output build-css:*",
+        "build:images": "run-s imagemin",
+        "watch:images": "onchange \"assets/images\" -- run-s build:images",
+        "build": "run-s -l lang copy build-css:* archive",
+        "copy": "copyfiles --exclude \"dist/**\" --exclude \"maps/**\" --exclude \"node_modules/**\" --exclude \"assets/**\" --exclude \"package-lock.json\" --exclude \"package.json\" --exclude \"bower.json\" --exclude \"bower_components/**\" *.* **/**  dist/cosmic && echo Files copied.",
+        "archive": "echo Create cosmic.zip & cross-zip dist/cosmic dist/cosmic.zip"
+    },
+    "devDependencies": {
+        "autoprefixer": "^7.1.5",
+        "browser-sync": "^2.18.13",
+        "imagemin-cli": "^3.0.0",
+        "jscs": "^3.0.7",
+        "mkdirp": "^0.5.1",
+        "node-sass": "^4.5.3",
+        "npm-run-all": "^4.1.1",
+        "onchange": "^3.2.1",
+        "postcss-cli": "^4.1.1",
+        "copyfiles": "^2.0.0",
+        "uglify-js": "^3.1.3",
+        "wiredep-cli": "^0.1.0",
+        "wp-pot-cli": "^1.0.3",
+        "cross-zip-cli": "^1.0.0"
+    }
+}

@@ -1,0 +1,74 @@
+/*
+----------------------------------------------------------------------
+Greeting
+----------------------------------------------------------------------
+*/
+.datapad{
+  background: linear-gradient(to bottom, $gradient-tblack 10%, #20202c 100%);
+  top: 25vh !important;
+  border-color: $primary-color;
+  border-radius: 0px 35px 35px 0px;
+  padding: 4rem 4rem 6rem;
+  overflow-y: visible;
+  animation: glowContainerFlicker 70ms infinite linear;
+  .datapad-tube{
+    position: absolute;
+    width: 120px;
+    top: -80px;
+    bottom: -80px;
+    left: -100px;
+    background: $gradient-tblack;
+    border-radius: 65px;
+    border: 1px solid $primary-color;
+    box-shadow: inset -3px 0px 7px 1px $primary-color, 0px 0px 10px 1px $primary-color;
+    animation: glowTubeFlicker 70ms infinite linear;
+    .datapad-tube-circle{
+      width: 100px;
+      height: 100px;
+      margin: 10px auto 0;
+      border: 1px solid $primary-color;
+      border-radius: 50%;
+    }
+    .h1{
+      position: relative;
+      text-align: center;
+      height: 78px;
+      font-weight: 700;
+      margin: 10px;
+      border: 1px solid $white;
+      border-radius: 50%;
+      animation: greetingPulse 2s infinite ease-out;
+      &:after{
+        content: '';
+        position: absolute;
+        width: 81%;
+        height: 69px;
+        top: 31px;
+        left: 8px;
+        border-top: 4px;
+        border-top-color: $gradient-tblack;
+        border-radius: 50%;
+        border-top-style: solid;
+      }
+    }
+  }
+  .datapad-pad{
+    height: 100%;
+    .h1{
+      @include heading;
+      text-align: center;
+      padding-bottom: 2rem;
+    }
+  }
+  p, .close-button{
+    color: $white;
+  }
+  p{
+    position: relative;
+  }
+  .close-button{
+    &:hover{
+      color: $primary-color;
+    }
+  }
+}
