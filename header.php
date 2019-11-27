@@ -39,7 +39,7 @@
         <div id="triangle-topright"></div>
         <p class="pfont h1">Anthony Jasper</p>
         <p class="h6">front-end web developer &amp; designer</p>
-        <p><a href="https://github.com/Anthony-Jasper/Portfolio">View Code on GitHub</a></p>
+        <p id="rec-github"><a href="https://github.com/Anthony-Jasper/Portfolio">View Code on GitHub</a></p>
         <div class="beams">
           <hr>
           <hr>
