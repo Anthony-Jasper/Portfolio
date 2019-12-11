@@ -28,7 +28,7 @@
   display: inline-block;
   width: 0;
   height: 0;
-  border-top: 150px solid lighten( black, 20% );
+  border-top: 5em solid lighten( black, 20% );
 }
 #triangle-topleft{
   border-right: 70vw solid transparent;
@@ -52,24 +52,23 @@
   text-align: center;
 }
 #developer-projects{
-  margin: 0 5.5em;
+  margin: 0 .5em;
   .dp-cell{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex: 1 1 50%;
     margin: 25px 0;
     &:nth-child(even){
       flex-direction: row-reverse;
     }
     img{
-      width: 50%;
       padding: 5px;
       object-fit: cover;
       border: 1px solid $white;
     }
     .dp-cell-content{
-      width: 50%;
-      padding: 5px 5px 5px 25px;
+      width: 100%;
+      padding: 5px 5px 5px 5px;
       .h5{
         border-bottom: 1px solid $white;
         width: inherit;
@@ -88,6 +87,7 @@
         position: relative;
         display: block;
         text-align: center;
+        margin-top: 15px;
       }
       ul{
         list-style-type: disc;
@@ -97,26 +97,21 @@
   }
 }
 #designer-projects{
-  margin: 0 5.5em;
+  margin: 0 .5em;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   >div{
     position: relative;
-    margin: 30px;
-    overflow: hidden;
-
     &:hover{
       .desp-content{
-        height: 100%;
         top: 0;
         background-color: rgba(0, 0, 0, 0.75);
-      }
-      img{
-        filter: blur(6px);
       }
     }
     img{
       cursor: pointer;
+      border: 1px solid $white;
+      padding: 5px;
     }
     a{
       position: relative;
@@ -126,7 +121,6 @@
     }
     .desp-content{
       transition: all 400ms ease-in;
-      position: absolute;
       top: 410px;
       .h5, .h6{
         @include heading;
@@ -141,48 +135,52 @@
     }
   }
 }
-
-@media screen and (min-width: 320px) and (max-width: 480px)
+@include breakpoint(large)
 {
   #triangle-topleft, #triangle-topright{
-    border-top: 5em solid #333333;
+    border-top-width: 150px;
   }
-  #developer-projects, #designer-projects{
-    margin: 0 .5em;
+  hr{
+    max-width: inherit;
+  }
+  #developer-projects, #designer-projects, .beams{
+    margin: 0 1.5em;
   }
   #developer-projects .dp-cell, #designer-projects{
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   #developer-projects .dp-cell img{
-    width: 100%;
+    width: 50%;
   }
   #developer-projects .dp-cell .dp-cell-content{
-    width: 100%;
-    padding: 5px 5px 5px 5px;
-  }
-  #developer-projects .dp-cell .dp-cell-content a{
-    margin-top: 15px;
+    width: 50%;
+    padding: 5px 5px 5px 25px;
   }
   #designer-projects > div{
-    margin: 5px;
-  }
-  #designer-projects > div img{
-    border: 1px solid $white;
-    padding: 5px;
-  }
-  #designer-projects > div{
-    overflow: visible;
-  }
-  #designer-projects > div .desp-content{
-    position: static;
-  }
-  #designer-projects > div:hover img{
-    filter: blur(0px);
-  }
-  #designer-projects > div:hover .desp-content{
-    height: auto;
+    margin: 30px;
   }
 }
-
-
+@include breakpoint(xlarge)
+{
+  #developer-projects .dp-cell .dp-cell-content a{
+    margin-top: 0px;
+  }
+  #designer-projects > div{
+    margin: 50px;
+    overflow: hidden;
+  }
+  #designer-projects > div img{
+    border: none;
+    padding: 0px;
+  }
+  #designer-projects > div .desp-content{
+    position: absolute;
+  }
+  #designer-projects > div:hover img{
+    filter: blur(6px);
+  }
+  #designer-projects > div:hover .desp-content{
+    height: 100%;
+  }
+}
 
