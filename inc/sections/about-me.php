@@ -19,7 +19,7 @@
           account_circle
         </i>
         <div>
-          <p id="orbit-bullet-heading">Personal Data</p>
+          <p id="orbit-bullet-heading">Personal</p>
           <p>Private</p>
         </div>
       </button>
@@ -29,7 +29,7 @@
           desktop_windows
         </i>
         <div>
-          <p id="orbit-bullet-heading">Software &amp; Skills</p>
+          <p id="orbit-bullet-heading">Skills</p>
           <p>Knowledge</p>
         </div>
       </button>

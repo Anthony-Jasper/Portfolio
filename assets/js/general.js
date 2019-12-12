@@ -4,9 +4,9 @@ jQuery( document ).ready(function( $ ) {
   
   $( document ).foundation();
   // Theme JS here
-  /*$(window).on('beforeunload', function() {
+  $(window).on('beforeunload', function() {
     $(window).scrollTop(0);
-  });*/
+  });
   //Displays Alert for users displaying website below 1600px
   function screenSize() {
     if (window.innerWidth < 1600 || window.innerHeight < 900) {

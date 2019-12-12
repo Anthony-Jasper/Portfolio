@@ -11,14 +11,14 @@ Header
   align-items: center;
   span{
     position: relative;
-    right: -30px;
+    right: 0px;
     margin-top: -2px;
     font-size: 35px;
     text-shadow: 0px 0px 6px $secondary-color;
     transition: all 300ms ease-out;
     animation: buttonFlash 1.5s infinite ease-out;
     &:last-of-type{
-      right: 30px;
+      right: 0px;
       margin-bottom: -5.5px;
       transform: rotate(180deg);
     }
@@ -26,8 +26,8 @@ Header
   p{
     position: relative;
     margin: 0;
-    font-size: 30px;
-    opacity: 0;
+    opacity: 1;
+    color: $white;
   }
   &:focus, &:hover{
     color: $white;
@@ -316,5 +316,19 @@ Header
     &:before{
       background: linear-gradient(-45deg, rgba(0,0,255,0), rgba(139, 144, 156, 0.8), rgba(0,0,255,0));
     }
+  }
+}
+@include breakpoint(large)
+{
+  .c2a-button span{
+    right: -30px;
+  }
+  .c2a-button span:last-of-type{
+    right: 30px;
+  }
+  .c2a-button p{
+    opacity: 0;
+    font-size: 30px;
+    opacity: 0;
   }
 }
