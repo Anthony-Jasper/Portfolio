@@ -4,17 +4,27 @@ Business - Jupiter
 ----------------------------------------------------------------------
 */
 #cloudyne-section{
+  #cloudyne-wrapper{
+    position: relative;
+    background-color: rgba(0,0,0,0.75);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 90%;
+  }
   #cloudyne-sectionBG{
     background-image: url(assets/images/jupiterMap.jpg);
   }
   #previous-work{
     position: relative;
     height: 56%;
+    top: 0;
   }
   #sun{
     position: absolute;
     top: 35%;
-    left: 40%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -26,7 +36,7 @@ Business - Jupiter
     &:hover{
       box-shadow: 0px 0px 12px 0px $secondary-color;
       p{
-        opacity: 0.3;
+        opacity: 1; 
       }
     }
     p{
@@ -34,7 +44,6 @@ Business - Jupiter
       bottom: 0;
       color: $white;
       text-transform: uppercase;
-      opacity: 0;
       width: 80px;
       left: 11px;
       top: 100px;
@@ -43,14 +52,15 @@ Business - Jupiter
     }
   }
   #supernova{
-    width: 740px;
-    height: 740px;
-    position: absolute;
-    -ms-transform: scale(0);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
     transform: scale(0);
-    top: -34%;
-    left: 7%;
+    top: 10px;
+    left: 0;
     #supernova-image{
+      display: none;
       background-image: url(assets/images/supernova.png);
       background-size: cover;
       width: 100%;
@@ -59,6 +69,7 @@ Business - Jupiter
       opacity: 0.4;
     }
     .supernova-star{
+      display: none;
       position: absolute;
       transition: all 250ms linear;
       cursor: pointer;
@@ -73,29 +84,8 @@ Business - Jupiter
         animation: blink-novaStar 2s infinite ease-out;
       }
     }
-    #star1, #cloudyne-work{
-      top: 20%;
-      left: 10%;
-    }
-    #star2, #sheame-work{
-      top: 40%;
-      left: 30%;
-    }
-    #star3, #sherwood-work{
-      top: 70%;
-      left: 20%;
-    }
-    #star4, #pout-work{
-      top: 30%;
-      left: 60%;
-    }
-    #star5, #medway-work{
-      top: 80%;
-      left: 60%;
-    }
-    #star6, #tangible-work{
-      top: 50%;
-      left: 80%;
+    .work{
+      position: relative;
     }
   }
   #sun.explodeSun{
@@ -105,20 +95,18 @@ Business - Jupiter
     animation: supernova-activeNova 1500ms forwards 550ms ease-out;
   }
   #cloudyne-work, #sheame-work, #sherwood-work, #pout-work, #medway-work, #tangible-work{
-    position: absolute;
     color: $white;
     z-index: 10;
     &:before{
       content: '';
       position: absolute;
-      width: 630px;
-      height: 307px;
-      top: -120px;
-      left: -310px;
+      width: 100%;
+      height: 100%;
+      top: 0px; 
+      left: 0px;
       //background: linear-gradient(to bottom, $gradient-tblack 10%, #20202c 100%);
       background-size: cover;
       filter: blur(3px);
-      display: none;
     }
   }
   #cloudyne-work:before{
@@ -145,21 +133,18 @@ Business - Jupiter
   .h4{
     @include heading;
     margin-bottom: 5px;
+    width: 100%;
   }
   .prev-logo, .prev-likes, .prev-website, .prev-dislikes, .prev-desc{
-    position: absolute;
-    opacity: 0;
-    display: none;
+    position: relative;
     box-shadow: 0px 0px 4px 1px $primary-color;
     text-align: center;
     background: rgba(0, 0, 0, 0.8);
   }
 
   .prev-logo{
-    left: -310px;
-    top: -20px;
+    width: 100%;
     padding: 4px 30px;
-    width: 630px;
     p{
       @include heading;
       margin: 0;
@@ -169,42 +154,31 @@ Business - Jupiter
     animation: supernova-logoExpand 1000ms forwards ease-out;
   }
   .prev-likes{
-    top: -50px;
-    width: 195px;
-    left: -90px;
     padding: 10px 0px;
-    height: 135px;
+    width: 100%;
   }
   .prev-likes.star-active2{
     animation: supernova-likesExpand 1000ms forwards 150ms ease-out;
   }
   .prev-website{
-    top: -50px;
-    left: -110px;
-    width: 230px;
-    padding: 55.5px 0px;
-    height: 135px;
+    width: 100%;
+    padding: 15px 0px;
+    display: block;
   }
 
   .prev-website.star-active3{
     animation: supernova-websiteExpand 500ms forwards ease-out;
   }
   .prev-dislikes{
-    top: -50px;
-    width: 195px;
-    left: -90px;
     padding: 10px 0px;
-    height: 135px;
+    width: 100%;
   }
   .prev-dislikes.star-active4{
     animation: supernova-dislikesExpand 1000ms forwards 300ms  ease-out;
   }
   .prev-desc{
-    left: -310px;
-    width: 630px;
-    top: -40px;
-    padding: 10px 0px;
-    height: 95px;
+    width: 100%;
+    padding: 10px;
   }
   .prev-desc.star-active5{
     animation: supernova-descExpand 1000ms forwards 450ms  ease-out;
@@ -223,15 +197,16 @@ Business - Jupiter
   }
   #cloudyne-heading{
     position: relative;
-  }
-  .h4{
-    @include heading;
-    margin-bottom: 5px;
+    text-align: center;
   }
   .tabs-title>a:focus, .tabs-title>a[aria-selected='true']{
     background: transparent;
   }
   .tabs, .tabs-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
     background: transparent;
     border: none;
     a{
@@ -241,24 +216,150 @@ Business - Jupiter
         background: transparent;
       }
     }
-    li{
-      &:first-of-type{
-        a{
-          padding-left: 0;
-        }
-      }
-    }
   }
   .tabs-panel{
     padding-left: 0;
   }
   #roles{
     position: relative;
+    text-align: center;
   }
   #roles.hideBottom{
     animation: cloudyne-hideBottom 550ms forwards 550ms ease-out;
   }
   #cloudyne-heading.hideTop{
     animation: cloudyne-hideTop 550ms forwards 550ms ease-out;
+  }
+  .tabs-title{
+    float: none;
+    flex: 1 1 50%;
+  }
+}
+@include breakpoint (large){
+  #cloudyne-section .prev-desc{
+    margin-bottom: 0;
+  }
+  #cloudyne-section #supernova{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  #cloudyne-section #cloudyne-work, #cloudyne-section #sheame-work, #cloudyne-section #sherwood-work, #cloudyne-section #pout-work, #cloudyne-section #medway-work, #cloudyne-section #tangible-work{
+    flex: 1 1 45%;
+    margin: 15px;
+  }
+}
+@include breakpoint(xlarge){
+  #cloudyne-section #cloudyne-wrapper{
+    background-color: rgba(0,0,0,0);
+  }
+  #cloudyne-section #sun{
+    left: 44%;
+    margin: 0;
+  }
+  #cloudyne-section #sun p{
+    opacity: 0.3;
+  }
+  #cloudyne-section #supernova #supernova-image, #cloudyne-section #supernova .supernova-star{
+    display: block;
+  }
+  #cloudyne-section .tabs, #cloudyne-section .tabs-content{
+    display: block;
+    text-align: left;
+  }
+  #cloudyne-section .h4{
+    text-align: center;
+  }
+  #cloudyne-section #supernova{
+    width: 740px;
+    height: 740px;
+    position: absolute;
+    /*top: -34%;
+    left: 7%;*/
+    top: -53%;
+    left: -18%;
+  }
+  #cloudyne-section .tabs-title{
+    display: inline-block;
+  }
+  #cloudyne-section #supernova{
+    #star1, #cloudyne-work{
+      top: 20%;
+      left: 10%;
+    }
+    #star2, #sheame-work{
+      top: 40%;
+      left: 30%;
+    }
+    #star3, #sherwood-work{
+      top: 70%;
+      left: 20%;
+    }
+    #star4, #pout-work{
+      top: 30%;
+      left: 60%;
+    }
+    #star5, #medway-work{
+      top: 80%;
+      left: 60%;
+    }
+    #star6, #tangible-work{
+      top: 50%;
+      left: 80%;
+    }
+  }
+  
+  #cloudyne-section .prev-logo, #cloudyne-section .prev-likes, #cloudyne-section .prev-website, #cloudyne-section .prev-dislikes, #cloudyne-section .prev-desc{
+    position: absolute;
+    opacity: 0;
+    display: none;
+  }
+  #cloudyne-section .prev-logo{
+    width: 630px;
+    left: -310px;
+    top: -20px;
+  }
+  #cloudyne-section .prev-likes, #cloudyne-section .prev-dislikes{
+    top: -50px;
+    width: 195px;
+    left: -90px;
+    height: 135px;
+  }
+  #cloudyne-section .prev-website{
+    top: -50px;
+    left: -110px;
+    width: 230px;
+    padding: 55.5px 0px;
+    height: 135px;
+  }
+  #cloudyne-section .prev-desc{
+    left: -310px;
+    width: 630px;
+    top: -40px;
+    padding: 10px 0px;
+    height: 95px;
+  }
+  #cloudyne-section #cloudyne-work:before, #cloudyne-section #sheame-work:before, #cloudyne-section #sherwood-work:before, #cloudyne-section #pout-work:before, #cloudyne-section #medway-work:before, #cloudyne-section #tangible-work:before{
+    width: 630px;
+    height: 307px;
+    top: -120px;
+    left: -310px;
+    display: none;
+  }
+  #cloudyne-section .tabs li:first-of-type a, #cloudyne-section .tabs-content li:first-of-type a{
+    padding-left: 0;
+  }
+  #cloudyne-section #cloudyne-wrapper{
+    overflow-y: visible;
+    overflow-x: visible;
+  }
+  #cloudyne-section #supernova .work{
+    position: absolute;
+  }
+}
+@include breakpoint (xxlarge){
+  #cloudyne-section #supernova{
+    top: -34%;
+    left: 7%;
   }
 }

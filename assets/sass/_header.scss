@@ -9,19 +9,13 @@ Header
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  span{
+  .material-icons-outlined{
     position: relative;
+    width: 24px;
     right: 0px;
-    margin-top: -2px;
-    font-size: 35px;
     text-shadow: 0px 0px 6px $secondary-color;
     transition: all 300ms ease-out;
     animation: buttonFlash 1.5s infinite ease-out;
-    &:last-of-type{
-      right: 0px;
-      margin-bottom: -5.5px;
-      transform: rotate(180deg);
-    }
   }
   p{
     position: relative;
@@ -34,7 +28,7 @@ Header
   }
 }
 .c2a-button.expand-button{
-  span{
+  .material-icons-outlined{
     right: 0px;
     transition: all 300ms ease-out;
     &:last-of-type{
@@ -320,10 +314,10 @@ Header
 }
 @include breakpoint(large)
 {
-  .c2a-button span{
+  .c2a-button .material-icons-outlined{
     right: -30px;
   }
-  .c2a-button span:last-of-type{
+  .c2a-button .material-icons-outlined:last-of-type{
     right: 30px;
   }
   .c2a-button p{

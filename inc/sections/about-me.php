@@ -5,9 +5,13 @@
     <p>Your ship has picked up a faint signal being transmitted from the planet below. After boosting the receiver, a button appears.
     </p>
     <button class="c2a-button" id="open-about">
-      <span>&#x2B39;</span>
+      <i class="material-icons-outlined">
+        arrow_back
+      </i>
       <p>Open Message</p>
-      <span>&#x2B39;</span>
+      <i class="material-icons-outlined">
+        arrow_forwards
+      </i>
     </button>
   </div>
   <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-auto-play="false">
