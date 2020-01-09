@@ -48,25 +48,29 @@ Header
   h1, h2{
     position: relative;
     display: block;
-    width: max-content;
-    margin: 0 auto;
-    letter-spacing: 11px;
+    letter-spacing: 8px;
     font-weight: bold;
-    text-align: center;
+    margin-bottom: 5px;
     @include heading;
   }
   h2{
-    font-size: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 10px;
     font-weight: 100;
     letter-spacing: 4px;
   }
   h1{
+    padding-left: 8px;
+    width: max-content;
+    margin: 0 auto 10px;
     &:after{
       content: '';
       position: absolute;
       width: 100%;
       height: 90px;
       bottom: -58px;
+      height: 36px;
+      bottom: -22px;
       left: 0;
       border-top: 4px;
       border-top-color: #131220;
@@ -104,13 +108,10 @@ Header
   #hamburger.is-active .line{
     width: 15px;
   }
-  #hamburger.is-active{
-    height: 44px;
-  }
   #hamburger {
     position: relative;
     width: 30px;
-    height: 30px;
+    bottom: -4px;
     cursor: pointer;
     .line {
       width: 25px;
@@ -126,8 +127,8 @@ Header
   #boring-nav{
     position: fixed;
     z-index: 9;
-    width: 0px;
-    height: 60px;
+    width: auto;
+    height: auto;
     bottom: 0px;
     left: 0px;
     background-color: rgba(255, 255, 255, 0.05);
@@ -139,17 +140,17 @@ Header
     opacity: 0;
     .menu{
       height: 100%;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center;
       opacity: 0;
       li{
         display: none;
         a{
-          padding: 1.2rem 0.7rem;
+          padding: 0.5rem 1rem;
+          font-size: 11px;
           color: $white;    
           position: relative;
           text-transform: uppercase;
-          font-size: 14px;
           &:hover{
            @include heading;
           }
@@ -158,11 +159,12 @@ Header
     }
   }
   #boring-nav.expand-nav{
-    width: 550px;
+    width: 100%;
+    padding-left: 40px;
     opacity: 1;
-    animation: Flicker 500ms 1s ease-in;
+    //animation: Flicker 500ms 1s ease-in;
     transition: all 500ms ease-in;
-    padding-left: 30px;
+    background-color: #181825;
     .menu{
       opacity: 1;
       transition: opacity 500ms 250ms ease-in;
@@ -172,8 +174,15 @@ Header
     }
   }
   .grid-container{
-    position: absolute;
-    width: 100%;
+    #planet-content{
+      position: absolute;
+      top: 40vh;
+      width: inherit;
+      text-align: center;
+      width: 70%;
+      right: 10px;
+      z-index: 2;
+    }
     .planet-nav{
       .cell{
         div{
@@ -184,10 +193,6 @@ Header
         }
       }
       #home-nav{
-        position: relative;
-        display: block;
-        margin: 0 auto;
-        
         #home{
           position: relative;
           background-image: url(assets/images/earthMap.jpg);
@@ -249,14 +254,43 @@ Header
         animation: rotatecontact 15s infinite linear;
       }
     }
+    .planet-nav.grid-y{
+      height: 92vh;
+      width: 30%;
+      margin-top: 3vh;
+      #about, #cloudyne, #experience, #contact{
+        position: relative;
+        top: 30%;
+        border-radius: 50%;
+        margin: 0 auto;
+        background-size: cover;
+        box-shadow: inset 0px -2px 6px 0px #636363;
+        width: 50px;
+        height: 50px;
+      }
+      #home-nav #home{
+        top: 30%;
+        width: 50px;
+        height: 50px;
+      }
+    }
   }
-  #alien{
+  #game-link{
     width: 60px;
     position: absolute;
     bottom: -9px;
     right: -6px;
     -ms-transform: rotate(30deg);
     transform: rotate(-30deg);
+    >div{
+      position: absolute;
+      display: none;
+      transform: rotate(30deg);
+      width: 260px;
+      font-size: 13px;
+      right: -40px;
+      top: -50px;
+    }
   }
 }
 #star-container{
@@ -312,8 +346,25 @@ Header
     }
   }
 }
-@include breakpoint(large)
+@include breakpoint(medium)
 {
+  .main-header .grid-container .planet-nav.grid-y #about, .main-header .grid-container .planet-nav.grid-y #cloudyne, .main-header .grid-container .planet-nav.grid-y #experience, .main-header .grid-container .planet-nav.grid-y #contact, .main-header .grid-container .planet-nav.grid-y #home-nav #home{
+    width: 70px;
+    height: 70px;
+  }
+  
+}
+@include breakpoint (large){
+  .main-header .grid-container #planet-content{
+    width: 50%;
+    right: 15%;
+  }
+}
+@include breakpoint(xlarge)
+{
+  .main-header #hamburger-menu{
+    bottom: 14px;
+  }
   .c2a-button .material-icons-outlined{
     right: -30px;
   }
@@ -324,5 +375,39 @@ Header
     opacity: 0;
     font-size: 30px;
     opacity: 0;
+  }
+  .main-header h2{
+    font-size: 1.5rem;
+  }
+  .main-header h1:after{
+    height: 90px;
+    bottom: -58px;
+  }
+  .main-header #boring-nav.expand-nav{
+    width: 550px;
+    padding-left: 30px;
+  }
+  .main-header #boring-nav{
+    height: 60px;
+  }
+  .main-header #boring-nav .menu li a{
+    padding: 1.2rem 0.7rem;
+    font-size: 14px;
+  }
+  .main-header #boring-nav .menu{
+    justify-content: space-evenly;
+  }
+  .main-header #boring-nav.expand-nav{
+    background-color: transparent;
+  }
+  .main-header .grid-container #planet-content{
+    position: relative;
+    width: 100%;
+    right: 0ex;
+    top: 0;
+  }
+  .main-header .grid-container .planet-nav #home-nav #home{
+    width: 450px;
+    height: 450px;
   }
 }

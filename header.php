@@ -24,11 +24,6 @@
     <div id="particles-js"></div> 
     <?php echo get_template_part('inc/recruiter'); ?>
         <div class="reveal small datapad" id="greeting" data-animation-in="fade-in slow" data-animation-out="fade-out fast" data-reveal>
-          <div class="datapad-tube">
-            <div class="datapad-tube-circle">
-              <p class="pfont h1">A</p>
-            </div>
-          </div>
           <div class="datapad-pad">
             <p class="pfont h1">Welcome Explorer</p>
             <p>Hello Explorer, and welcome to your first day in the Sol system. Feel free to stay docked at Earth or adventure out to the other planets and discover what you can about a certain human called ‘Anthony Jasper’.
@@ -53,33 +48,40 @@
 
           <div class="grid-container full">
             <div class="planet-nav grid-x">
-              <div id="about-nav" class="cell auto large-2">
+              <div id="about-nav" class="cell auto xlarge-2">
                 <div id="about"></div>
               </div>
-              <div id="cloudyne-nav" class="cell auto large-2">
+              <div id="cloudyne-nav" class="cell auto xlarge-2">
                 <div id="cloudyne"></div>  
               </div>
-              <div id="home-nav" class="cell auto large-4">
+              <div id="home-nav" class="cell auto xlarge-4">
                 <div id="home"></div>  
               </div>
-              <div id="experience-nav" class="cell auto large-2">
+              <div id="experience-nav" class="cell auto xlarge-2">
                 <div id="experience"></div> 
               </div>
-              <div id="contact-nav" class="cell auto large-2">
+              <div id="contact-nav" class="cell auto xlarge-2">
                 <div id="contact"></div>
               </div>
             </div>
-            <h1 id="planet-heading">Home</h1>
-            <h2 id="planet-desc">Dock at Earth and fend off the alien invasion</h2>
-            <div class="hyperdrive-menu" data-magellan data-offset="-25" data-animation-duration="2000" data-animation-easing="swing">
-              <a class="c2a-button travel-button" href="#home" data-open="hyperspace">
-                <span>&#x2B39;</span>
-                <p>Travel</p>
-                <span>&#x2B39;</span>
-              </a>
+            <div id="planet-content">
+              <h1 id="planet-heading">Home</h1>
+              <h2 id="planet-desc">Dock at Earth and fend off the alien invasion</h2>
+              <div class="hyperdrive-menu" data-magellan data-offset="-25" data-animation-duration="2000" data-animation-easing="swing">
+                <a class="c2a-button travel-button" href="#home" data-open="hyperspace">
+                  <i class="material-icons-outlined">
+                    arrow_back
+                  </i>
+                  <p>Travel</p>
+                  <i class="material-icons-outlined">
+                    arrow_forwards
+                  </i>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="hyperdrive-menu" data-magellan data-offset="-25" data-animation-duration="2000" data-animation-easing="swing">
+          <div class="hyperdrive-menu" id="game-link" data-magellan data-offset="-25" data-animation-duration="2000" data-animation-easing="swing">
+            <div>Game Only Available at 1600px+</div>
             <a href="#game-section" data-open="hyperspace">
               <img id="alien" src="<?php bloginfo('template_url'); ?>/assets/images/alien-gameintro.png" />  
             </a>

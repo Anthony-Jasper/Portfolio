@@ -12,7 +12,6 @@ Experience - Saturn
   }
   #experience-wrap{
     position: relative;
-    background-color: rgba(0, 0, 0, 0.75);
     overflow-y: scroll;
     overflow-x: hidden;
     height: 90%;
@@ -166,9 +165,6 @@ Experience - Saturn
   }
 }
 @include breakpoint (xlarge){
-  #experience-section #experience-wrap{
-    background-color: rgba(0,0,0,0);
-  }
   #experience-section .education-hoveractive p .circle-base{
     font-size: 30px;
     left: -4px;

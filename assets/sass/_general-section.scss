@@ -11,6 +11,7 @@ Combined Sections
 }
 #about-sectionBG, #cloudyne-sectionBG, #experience-sectionBG, #contact-sectionBG{
   @include section-planets;
+  filter: brightness(0.3);
 }
 #about-section .orbit, #previous-work, #cloudyne-heading, #cloudyne-section .tabs, #cloudyne-section .tabs-content, #education-wrapper, #experience-orbit, #edu-projects, #contact-wrapper {
   margin-left: 0%;
@@ -110,6 +111,9 @@ Combined Sections
 
 @include breakpoint(xlarge)
 {
+  #about-sectionBG, #cloudyne-sectionBG, #experience-sectionBG, #contact-sectionBG{
+    filter: brightness(1);
+  }
   #about-section .orbit, #previous-work, #cloudyne-heading, #cloudyne-section .tabs, #cloudyne-section .tabs-content, #education-wrapper, #experience-orbit, #edu-projects, #contact-wrapper{
     @include content-margin;
     padding: 0px;
