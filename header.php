@@ -55,7 +55,7 @@
                 <div id="cloudyne"></div>  
               </div>
               <div id="home-nav" class="cell auto xlarge-4">
-                <div id="home"></div>  
+                <div id="home"></div>
               </div>
               <div id="experience-nav" class="cell auto xlarge-2">
                 <div id="experience"></div> 

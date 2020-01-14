@@ -195,13 +195,10 @@ Header
       #home-nav{
         #home{
           position: relative;
-          background-image: url(assets/images/earthMap.jpg);
-          width: 530px;
-          height: 530px;
+          background-image: url(assets/images/planets/earth-mapMobile.jpeg);
           margin: 0 auto;
           border-radius: 50%;
           background-size: cover;
-          animation: rotatehome 12s infinite linear;
           box-shadow: inset 0px -1px 7px -4px #ffffff;
           &:hover{
             border-radius: 50%;
@@ -230,28 +227,24 @@ Header
         box-shadow: inset 0px -2px 6px 0px #636363;
       }
       #about{
-        background-image: url(assets/images/marsMap.jpg);
+        background-image: url(assets/images/planets/mars-mapMobile.jpeg);
         width: 50px;
         height: 50px;
-        animation: rotateabout 9s infinite linear;
       }
       #cloudyne{
-        background-image: url(assets/images/jupiterMap.jpg);
+        background-image: url(assets/images/planets/jupiter-mapMobile.jpeg);
         width: 100px;
         height: 100px;
-        animation: rotatecloudyne 5s infinite linear;
       }
       #experience{
-        background-image: url(assets/images/saturnMap.jpg);
+        background-image: url(assets/images/planets/saturn-mapMobile.jpeg);
         width: 75px;
         height: 75px;
-        animation: rotateexperience 4s infinite linear;
       }
       #contact{
-        background-image: url(assets/images/plutoMap.jpg);
+        background-image: url(assets/images/planets/pluto-mapMobile.jpeg);
         width: 25px;
         height: 25px;
-        animation: rotatecontact 15s infinite linear;
       }
     }
     .planet-nav.grid-y{
@@ -354,7 +347,7 @@ Header
   }
   
 }
-@include breakpoint (large){
+@include breakpoint(large){
   .main-header .grid-container #planet-content{
     width: 50%;
     right: 15%;
@@ -407,7 +400,21 @@ Header
     top: 0;
   }
   .main-header .grid-container .planet-nav #home-nav #home{
+    background-image: url(assets/images/planets/earth-mapDesktop.jpeg);
+    animation: rotatehome 12s infinite linear;
     width: 450px;
     height: 450px;
+  }
+  .main-header .grid-container .planet-nav #cloudyne{
+    animation: rotatecloudyne 5s infinite linear;
+  }
+  .main-header .grid-container .planet-nav #about{
+    animation: rotateabout 9s infinite linear;
+  }
+  .main-header .grid-container .planet-nav #experience{
+    animation: rotateexperience 4s infinite linear;
+  }
+  .main-header .grid-container .planet-nav #contact{
+    animation: rotatecontact 15s infinite linear;
   }
 }

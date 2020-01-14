@@ -113,6 +113,7 @@ Combined Sections
 {
   #about-sectionBG, #cloudyne-sectionBG, #experience-sectionBG, #contact-sectionBG{
     filter: brightness(1);
+    animation: slowSpin 35s infinite linear;
   }
   #about-section .orbit, #previous-work, #cloudyne-heading, #cloudyne-section .tabs, #cloudyne-section .tabs-content, #education-wrapper, #experience-orbit, #edu-projects, #contact-wrapper{
     @include content-margin;

@@ -7,7 +7,7 @@ Animation / KeyFrames
 /*Header-Planets-Spin(Move Background Image Left to Right)*/
 @keyframes rotatehome {
   0% { background-position: 0px; }
-  100% { background-position: 1065px; }
+  100% { background-position: 900px; }
 }
 @keyframes rotateabout {
   0% { background-position: 0px; }
@@ -84,7 +84,7 @@ Animation / KeyFrames
 /*Section Background Planets*/
 @keyframes slowSpin {
   0%{ background-position: 0px; }
-  100%{ background-position: 2000px; }
+  100%{ background-position: 1300px; }
 }
 /*Greeting Pulse*/
 @keyframes greetingPulse {

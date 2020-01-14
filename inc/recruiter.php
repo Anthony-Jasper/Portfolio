@@ -22,7 +22,7 @@
     <p class="pfont h5">Developer Projects</p>
     <div id="developer-projects">
       <div class="dp-cell">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/cloudyne_background.png" /> 
+        <img src="<?php bloginfo('template_url'); ?>/assets/images/cloudyne_background.jpeg" /> 
         <div class="dp-cell-content">
           <p class="hfont h5">Cloudyne Limited</p>
           <div>
@@ -52,7 +52,7 @@
         </div>
       </div>
       <div class="dp-cell">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/shea-me_background.png" /> 
+        <img src="<?php bloginfo('template_url'); ?>/assets/images/shea-me_background.jpeg" /> 
         <div class="dp-cell-content">
           <p class="hfont h5">Shea-Me</p>
           <div>
@@ -82,7 +82,7 @@
         </div>
       </div>
       <div class="dp-cell">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/pout_background.png" /> 
+        <img src="<?php bloginfo('template_url'); ?>/assets/images/pout_background.jpeg" /> 
         <div class="dp-cell-content">
           <p class="hfont h5">Pout &amp; Sparkle</p>
           <div>
@@ -110,7 +110,7 @@
         </div>
       </div>
       <div class="dp-cell">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/sherwood_background.png" /> 
+        <img src="<?php bloginfo('template_url'); ?>/assets/images/sherwood_background.jpeg" /> 
         <div class="dp-cell-content">
           <p class="hfont h5">Sherwood and Hope</p>
           <div>
@@ -139,7 +139,7 @@
         </div>
       </div>
       <div class="dp-cell">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/medway_background.png" /> 
+        <img src="<?php bloginfo('template_url'); ?>/assets/images/medway_background.jpeg" /> 
         <div class="dp-cell-content">
           <p class="hfont h5">Medway Vegan Festivals</p>
           <div>

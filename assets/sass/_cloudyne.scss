@@ -11,7 +11,7 @@ Business - Jupiter
     height: 90%;
   }
   #cloudyne-sectionBG{
-    background-image: url(assets/images/jupiterMap.jpg);
+    background-image: url(assets/images/planets/jupiter-mapBG.jpeg);
   }
   #previous-work{
     position: relative;
@@ -28,9 +28,9 @@ Business - Jupiter
     height: 100px;
     border-radius: 50%;
     background-size: cover;
-    animation: slowSpin 360s infinite linear;
+    animation: slowSpin 80s infinite linear;
     box-shadow: inset 0px -2px 6px 0px #636363;
-    background-image: url(assets/images/sunMap.jpg);
+    background-image: url(assets/images/planets/sun-mapMobile.jpeg);
     cursor: pointer;
     &:hover{
       box-shadow: 0px 0px 12px 0px $secondary-color;
@@ -109,19 +109,19 @@ Business - Jupiter
     }
   }
   #cloudyne-work:before{
-    background-image: url(assets/images/cloudyne_background.png);
+    background-image: url(assets/images/cloudyne_background.jpeg);
   }
   #sheame-work:before{
-    background-image: url(assets/images/shea-me_background.png);
+    background-image: url(assets/images/shea-me_background.jpeg);
   }
   #sherwood-work:before{
-    background-image: url(assets/images/sherwood_background.png);
+    background-image: url(assets/images/sherwood_background.jpeg);
   }
   #pout-work:before{
-    background-image: url(assets/images/pout_background.png);
+    background-image: url(assets/images/pout_background.jpeg);
   }
   #medway-work:before{
-    background-image: url(assets/images/medway_background.png);
+    background-image: url(assets/images/medway_background.jpeg);
   }
 
   #cloudyne-work.before-bkg, #sheame-work.before-bkg, #sherwood-work.before-bkg, #pout-work.before-bkg, #medway-work.before-bkg, #tangible-work.before-bkg{

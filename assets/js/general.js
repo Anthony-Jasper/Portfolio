@@ -1,6 +1,6 @@
 jQuery( document ).ready(function( $ ) {
   console.log('To view what needs to be done or fixed for the website type todoWeb(); or issuesWeb(); If you want to see what future ideas I have for the site, type ideasWeb();');
- 
+  alert('This website is still under construction.');
   
   $( document ).foundation();
   // Theme JS here
@@ -9,9 +9,6 @@ jQuery( document ).ready(function( $ ) {
   });
   //Displays Alert for users displaying website below 1600px
   function screenSize() {
-    /* if (window.innerHeight < 900) {
-      alert('You are seeing this alert because you are trying to view this site at a resolution that it not yet supported. \n\nThis site is still being developed. For a better viewing experience please view the site at 900px+ height.');
-    } */
     if (window.innerWidth < 1281) {
       $('.planet-nav').addClass('grid-y');
       $('.planet-nav').removeClass('grid-x');
