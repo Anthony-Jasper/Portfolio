@@ -27,7 +27,9 @@ jQuery( document ).ready(function( $ ) {
   
   
   /*SHOTTING STAR - RUN FUNCTION*/
-  shootingStars();
+  if (window.innerWidth > 1281) {
+    shootingStars();
+  }
   /******************************/
 
   $("#hamburger").click(function () {
@@ -266,16 +268,29 @@ jQuery( document ).ready(function( $ ) {
   $("#game-link").mouseleave(function () {
     $('#game-link>div').css('display', 'none');
   });
-
+  if (jQuery(window).width() < 1280) {
+    cancelRequestAnimFrame(pJSDom[0].pJS.fn.checkAnimFrame);
+    cancelRequestAnimFrame(pJSDom[0].pJS.fn.drawAnimFrame);
+    pJSDom[0].pJS.fn.particlesEmpty();
+    pJSDom[0].pJS.fn.canvasClear();
+  }
 });
 
 function todoWeb() {
-  console.log('Responsive');
-  console.log('New Image for Contact Form');
+  console.log('Responsive - Landscape');
+  console.log('New Profile Picture for Contact Form');
   console.log('Improve "hyperspace" to look more realistic');
+  console.log('Tone Down Glow on Titles');
+  console.log('Remove Gradient from Titles');
+  console.log('Remake Tabs as mobile first');
+  console.log('Edit Animations to not use top,bottom,left,right properties. Replace with Transform to make use of the GPU (Smoother Animations');
 }
 function issuesWeb() {
-
+  console.log('Change Supernova Cards to no longer rely on star positioning. Look at possible fixed positions due to sections using VH');
+  console.log('Education Tabs not resizing depending on content');
+  console.log('Role selection not displaying info when selected on mobile');
+  console.log('Android Keyboard Effecting Section Height on Mobile');
+  console.log('Mobile Menu - Mis-aligned on Mobile');
 }
 function ideasWeb() {
   console.log('Home - Planets slide into focus when selected');

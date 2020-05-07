@@ -131,20 +131,26 @@ About Me - Mars
   }
 }
 @include breakpoint (medium){
-  #about-section #about-greeting{
-    top: 25vh;
-    max-width: 41rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-  }
+  #about-section{
+    #about-greeting{
+      top: 25vh;
+      max-width: 41rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0px;
+    }
+  } 
 }
 @include breakpoint(xlarge)
 {
-  #about-section #about-greeting{
-    padding: 2rem 4rem 4rem;
-  }
-  #about-section .orbit #ss-wrapper, #about-section .orbit #int-wrapper{
-    flex-wrap: nowrap;
-  }
+  #about-section{
+    #about-greeting{
+      padding: 2rem 4rem 4rem;
+    }
+    .orbit{
+      #ss-wrapper, #int-wrapper{
+        flex-wrap: nowrap;
+      }
+    } 
+  } 
 }

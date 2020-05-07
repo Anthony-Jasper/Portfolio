@@ -165,23 +165,27 @@ input:-webkit-autofill{
   }
 }
 @include breakpoint (large){
-  #contact-section #contact-content{
-    margin: 0;
-  }
-  #contact-section .wpcf7 p{
-    margin-right: 0px;
-  }
-  #contact-section .wpcf7 span[role=alert]{
-    background: linear-gradient(90deg, rgba(0,0,0,0) 20%, rgba(192,46,58,1) 65%);
-    top: 0px;
-    padding: 5.5px 5px 5.5px 0px;
-    font-size: 0.7em;
-  }
-  #contact-section #contact-wrapper{
-    justify-content: flex-start;
-    margin-left: 37%;
-    margin-right: 2%;
-  }
+  #contact-section{
+    #contact-content{
+      margin: 0;
+    }
+    .wpcf7{
+      p{
+        margin-right: 0px;
+      }
+      span[role=alert]{
+        background: linear-gradient(90deg, rgba(0,0,0,0) 20%, rgba(192,46,58,1) 65%);
+        top: 0px;
+        padding: 5.5px 5px 5.5px 0px;
+        font-size: 0.7em;
+      }
+    }
+    #contact-wrapper{
+      justify-content: flex-start;
+      margin-left: 37%;
+      margin-right: 2%;
+    } 
+  } 
 }
 @include breakpoint (xlarge){
   #contact-section .h4{

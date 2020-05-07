@@ -235,124 +235,126 @@ Business - Jupiter
   }
 }
 @include breakpoint (large){
-  #cloudyne-section .prev-desc{
-    margin-bottom: 0;
-  }
-  #cloudyne-section #supernova{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  #cloudyne-section #cloudyne-work, #cloudyne-section #sheame-work, #cloudyne-section #sherwood-work, #cloudyne-section #pout-work, #cloudyne-section #medway-work, #cloudyne-section #tangible-work{
-    flex: 1 1 45%;
-    margin: 15px;
-  }
+  #cloudyne-section{
+    .prev-desc{
+      margin-bottom: 0;
+    }
+    #supernova{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    #cloudyne-work, #sheame-work, #sherwood-work, #pout-work, #medway-work, #tangible-work{
+      flex: 1 1 45%;
+      margin: 15px;
+    }
+  } 
 }
 @include breakpoint(xlarge){
-  #cloudyne-section #sun{
-    left: 44%;
-    margin: 0;
-  }
-  #cloudyne-section #sun p{
-    opacity: 0.3;
-  }
-  #cloudyne-section #supernova #supernova-image, #cloudyne-section #supernova .supernova-star{
-    display: block;
-  }
-  #cloudyne-section .tabs, #cloudyne-section .tabs-content{
-    display: block;
-    text-align: left;
-  }
-  #cloudyne-section .h4{
-    text-align: center;
-  }
-  #cloudyne-section #supernova{
-    width: 740px;
-    height: 740px;
-    position: absolute;
-    /*top: -34%;
-    left: 7%;*/
-    top: -53%;
-    left: -18%;
-  }
-  #cloudyne-section .tabs-title{
-    display: inline-block;
-  }
-  #cloudyne-section #supernova{
-    #star1, #cloudyne-work{
-      top: 20%;
-      left: 10%;
+  #cloudyne-section{
+    #sun{
+      left: 44%;
+      margin: 0;
     }
-    #star2, #sheame-work{
-      top: 40%;
-      left: 30%;
+    p{
+      opacity: 0.3;
     }
-    #star3, #sherwood-work{
-      top: 70%;
-      left: 20%;
+    #supernova{
+      width: 740px;
+      height: 740px;
+      position: absolute;
+      top: -53%;
+      left: -18%;
+      #supernova-image, .supernova-star{
+        display: block;
+      }
+      #star1, #cloudyne-work{
+        top: 20%;
+        left: 10%;
+      }
+      #star2, #sheame-work{
+        top: 40%;
+        left: 30%;
+      }
+      #star3, #sherwood-work{
+        top: 70%;
+        left: 20%;
+      }
+      #star4, #pout-work{
+        top: 30%;
+        left: 60%;
+      }
+      #star5, #medway-work{
+        top: 80%;
+        left: 60%;
+      }
+      #star6, #tangible-work{
+        top: 50%;
+        left: 80%;
+      }
+      .work{
+        position: absolute;
+      }
+    } 
+    .tabs, .tabs-content{
+      display: block;
+      text-align: left;
+      li:first-of-type{
+        a{
+          padding-left: 0;
+        }
+      } 
     }
-    #star4, #pout-work{
-      top: 30%;
-      left: 60%;
+    .h4{
+      text-align: center;
     }
-    #star5, #medway-work{
-      top: 80%;
-      left: 60%;
+    .tabs-title{
+      display: inline-block;
     }
-    #star6, #tangible-work{
-      top: 50%;
-      left: 80%;
+    .prev-logo, .prev-likes, .prev-website, .prev-dislikes, .prev-desc{
+      position: absolute;
+      opacity: 0;
+      display: none;
     }
-  }
-  
-  #cloudyne-section .prev-logo, #cloudyne-section .prev-likes, #cloudyne-section .prev-website, #cloudyne-section .prev-dislikes, #cloudyne-section .prev-desc{
-    position: absolute;
-    opacity: 0;
-    display: none;
-  }
-  #cloudyne-section .prev-logo{
-    width: 630px;
-    left: -310px;
-    top: -20px;
-  }
-  #cloudyne-section .prev-likes, #cloudyne-section .prev-dislikes{
-    top: -50px;
-    width: 195px;
-    left: -90px;
-    height: 135px;
-  }
-  #cloudyne-section .prev-website{
-    top: -50px;
-    left: -110px;
-    width: 230px;
-    padding: 55.5px 0px;
-    height: 135px;
-  }
-  #cloudyne-section .prev-desc{
-    left: -310px;
-    width: 630px;
-    top: -40px;
-    padding: 10px 0px;
-    height: 95px;
-  }
-  #cloudyne-section #cloudyne-work:before, #cloudyne-section #sheame-work:before, #cloudyne-section #sherwood-work:before, #cloudyne-section #pout-work:before, #cloudyne-section #medway-work:before, #cloudyne-section #tangible-work:before{
-    width: 630px;
-    height: 307px;
-    top: -120px;
-    left: -310px;
-    display: none;
-  }
-  #cloudyne-section .tabs li:first-of-type a, #cloudyne-section .tabs-content li:first-of-type a{
-    padding-left: 0;
-  }
-  #cloudyne-section #cloudyne-wrapper{
-    overflow-y: visible;
-    overflow-x: visible;
-  }
-  #cloudyne-section #supernova .work{
-    position: absolute;
-  }
+    .prev-logo{
+      width: 630px;
+      left: -310px;
+      top: -20px;
+    }
+    .prev-likes, .prev-dislikes{
+      top: -50px;
+      width: 195px;
+      left: -90px;
+      height: 135px;
+    }
+    .prev-website{
+      top: -50px;
+      left: -110px;
+      width: 230px;
+      padding: 55.5px 0px;
+      height: 135px;
+    }
+    .prev-desc{
+      left: -310px;
+      width: 630px;
+      top: -40px;
+      padding: 10px 0px;
+      height: 95px;
+    }
+    #cloudyne-work:before, #sheame-work:before, #sherwood-work:before, #pout-work:before,  #medway-work:before, #tangible-work:before{
+      width: 630px;
+      height: 307px;
+      top: -120px;
+      left: -310px;
+      display: none;
+    }
+    #cloudyne-wrapper{
+      overflow-y: visible;
+      overflow-x: visible;
+    }
+  } 
 }
+
 @include breakpoint (xxlarge){
   #cloudyne-section #supernova{
     top: -34%;

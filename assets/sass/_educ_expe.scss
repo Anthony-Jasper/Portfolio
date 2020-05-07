@@ -160,35 +160,50 @@ Experience - Saturn
   }
 }
 @include breakpoint (medium){
-  #experience-section .orbit-bullets p:last-of-type, #experience-section .orbit-bullets button:last-of-type p:last-of-type{
-    top: 0;
-  }
+  #experience-section{
+    .orbit-bullets{
+      p:last-of-type, button:last-of-type p:last-of-type{
+        top: 0;
+      }
+    } 
+  } 
 }
 @include breakpoint (xlarge){
-  #experience-section .education-hoveractive p .circle-base{
-    font-size: 30px;
-    left: -4px;
-    top: 18px;
-  }
-  #about-section .orbit-bullets p:last-of-type, #experience-section .orbit-bullets p:last-of-type{
-    font-size: 12px;
-  }
-  #experience-section .orbit-bullets button{
-    max-width: 260px;
-  }
-  #experience-section .education-hoveractive p{
-    width: 80px;
-    height: 80px;
-  }
-  #experience-section .education-hoveractive p #circle-spin-2{
-    width: 95px;
-    height: 95px;
-  }
-  #experience-section .education-hoveractive p #circle-spin-3{
-    width: 65px;
-    height: 65px;
-  }
-  #experience-section .education-hoveractive{
-    height: 180px;
-  }
+  #experience-section{
+    .education-hoveractive{
+      height: 180px;
+      p{
+        width: 80px;
+        height: 80px;
+        .circle-base{
+          font-size: 30px;
+          left: -4px;
+          top: 18px;
+        }
+        #circle-spin-2{
+          width: 95px;
+          height: 95px;
+        }
+        #circle-spin-3{
+          width: 65px;
+          height: 65px;
+        }
+      } 
+    } 
+    .orbit-bullets{
+      p:last-of-type{
+        font-size: 12px;
+      }
+      button{
+        max-width: 260px;
+      }
+    } 
+  } 
+  #about-section{
+    .orbit-bullets{
+      p:last-of-type, {
+        font-size: 12px;
+      } 
+    } 
+  } 
 }

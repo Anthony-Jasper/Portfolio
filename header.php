@@ -67,7 +67,7 @@
             <div id="planet-content">
               <h1 id="planet-heading">Home</h1>
               <h2 id="planet-desc">Dock at Earth and fend off the alien invasion</h2>
-              <div class="hyperdrive-menu" data-magellan data-offset="-25" data-animation-duration="2000" data-animation-easing="swing">
+              <div class="hyperdrive-menu" data-magellan data-offset="-25" data-animation-duration="2000" data-animation-easing="linear">
                 <a class="c2a-button travel-button" href="#home" data-open="hyperspace">
                   <i class="material-icons-outlined">
                     arrow_back
@@ -80,7 +80,7 @@
               </div>
             </div>
           </div>
-          <div class="hyperdrive-menu" id="game-link" data-magellan data-offset="-25" data-animation-duration="2000" data-animation-easing="swing">
+          <div class="hyperdrive-menu" id="game-link" data-magellan data-offset="-25" data-animation-duration="2000" data-animation-easing="linear">
             <div>Game Only Available at 1600px+</div>
             <a href="#game-section" data-open="hyperspace">
               <img id="alien" src="<?php bloginfo('template_url'); ?>/assets/images/alien-gameintro.png" />  
@@ -94,7 +94,7 @@
             </button>
           </div><!-- hamburger-menu -->
           <div id="boring-nav" >
-            <ul class="menu hyperdrive-menu" data-magellan data-offset="-25" data-animation-duration="2000" data-animation-easing="swing">
+            <ul class="menu hyperdrive-menu" data-magellan data-offset="-25" data-animation-duration="2000" data-animation-easing="linear">
               <li><a href="#home" data-open="hyperspace">Home</a></li>
               <li><a href="#about-section" data-open="hyperspace">About</a></li>
               <li><a href="#cloudyne-section" data-open="hyperspace">Cloudyne</a></li>

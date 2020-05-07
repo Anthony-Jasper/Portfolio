@@ -341,11 +341,16 @@ Header
 }
 @include breakpoint(medium)
 {
-  .main-header .grid-container .planet-nav.grid-y #about, .main-header .grid-container .planet-nav.grid-y #cloudyne, .main-header .grid-container .planet-nav.grid-y #experience, .main-header .grid-container .planet-nav.grid-y #contact, .main-header .grid-container .planet-nav.grid-y #home-nav #home{
-    width: 70px;
-    height: 70px;
-  }
-  
+  .main-header{
+    .grid-container{
+      .planet-nav.grid-y{
+        #about, #cloudyne, #experience, #contact, #home-nav #home{
+          width: 70px;
+          height: 70px;
+        }
+      } 
+    } 
+  } 
 }
 @include breakpoint(large){
   .main-header .grid-container #planet-content{
@@ -355,66 +360,72 @@ Header
 }
 @include breakpoint(xlarge)
 {
-  .main-header #hamburger-menu{
-    bottom: 14px;
-  }
-  .c2a-button .material-icons-outlined{
-    right: -30px;
-  }
-  .c2a-button .material-icons-outlined:last-of-type{
-    right: 30px;
-  }
-  .c2a-button p{
-    opacity: 0;
-    font-size: 30px;
-    opacity: 0;
-  }
-  .main-header h2{
-    font-size: 1.5rem;
-  }
-  .main-header h1:after{
-    height: 90px;
-    bottom: -58px;
-  }
-  .main-header #boring-nav.expand-nav{
-    width: 550px;
-    padding-left: 30px;
-  }
-  .main-header #boring-nav{
-    height: 60px;
-  }
-  .main-header #boring-nav .menu li a{
-    padding: 1.2rem 0.7rem;
-    font-size: 14px;
-  }
-  .main-header #boring-nav .menu{
-    justify-content: space-evenly;
-  }
-  .main-header #boring-nav.expand-nav{
-    background-color: transparent;
-  }
-  .main-header .grid-container #planet-content{
-    position: relative;
-    width: 100%;
-    right: 0ex;
-    top: 0;
-  }
-  .main-header .grid-container .planet-nav #home-nav #home{
-    background-image: url(assets/images/planets/earth-mapDesktop.jpeg);
-    animation: rotatehome 12s infinite linear;
-    width: 450px;
-    height: 450px;
-  }
-  .main-header .grid-container .planet-nav #cloudyne{
-    animation: rotatecloudyne 5s infinite linear;
-  }
-  .main-header .grid-container .planet-nav #about{
-    animation: rotateabout 9s infinite linear;
-  }
-  .main-header .grid-container .planet-nav #experience{
-    animation: rotateexperience 4s infinite linear;
-  }
-  .main-header .grid-container .planet-nav #contact{
-    animation: rotatecontact 15s infinite linear;
-  }
+  .main-header{
+    #hamburger-menu{
+      bottom: 14px;
+    }
+    h2{
+      font-size: 1.5rem;
+    }
+    h1:after{
+      height: 90px;
+      bottom: -58px;
+    }
+    #boring-nav.expand-nav{
+      width: 550px;
+      padding-left: 30px;
+      background-color: transparent;
+    }
+    #boring-nav{
+      height: 60px;
+      .menu{
+        justify-content: space-evenly;
+        li a{
+          padding: 1.2rem 0.7rem;
+          font-size: 14px;
+        }
+      } 
+    }
+    .grid-container{
+      #planet-content{
+        position: relative;
+        width: 100%;
+        right: 0ex;
+        top: 0;
+      }
+      .planet-nav{
+        #home-nav #home{
+          background-image: url(assets/images/planets/earth-mapDesktop.jpeg);
+          animation: rotatehome 12s infinite linear;
+          width: 450px;
+          height: 450px;
+        }
+        #cloudyne{
+          animation: rotatecloudyne 5s infinite linear;
+        }
+        #about{
+          animation: rotateabout 9s infinite linear;
+        }
+        #experience{
+          animation: rotateexperience 4s infinite linear;
+        }
+        #contact{
+          animation: rotatecontact 15s infinite linear;
+        }
+      }
+    } 
+  } 
+  .c2a-button{
+    .material-icons-outlined{
+      right: -30px;
+      &:last-of-type{
+        right: 30px;
+      }
+    }
+    p{
+      opacity: 0;
+      font-size: 30px;
+      opacity: 0;
+    }
+  } 
 }

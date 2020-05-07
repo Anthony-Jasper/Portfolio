@@ -143,44 +143,59 @@
   hr{
     max-width: inherit;
   }
+  #designer-projects{
+    flex-wrap: nowrap;
+  }
   #developer-projects, #designer-projects, .beams{
     margin: 0 1.5em;
   }
-  #developer-projects .dp-cell, #designer-projects{
-    flex-wrap: nowrap;
-  }
-  #developer-projects .dp-cell img{
-    width: 50%;
-  }
-  #developer-projects .dp-cell .dp-cell-content{
-    width: 50%;
-    padding: 5px 5px 5px 25px;
-  }
-  #designer-projects > div{
-    margin: 30px;
-  }
+  #developer-projects{
+    .dp-cell{
+      flex-wrap: nowrap;
+      img{
+        width: 50%;
+      }
+      .dp-cell-content{
+        width: 50%;
+        padding: 5px 5px 5px 25px;
+      }
+    }
+    >div{
+      margin: 30px;
+    }
+  } 
 }
 @include breakpoint(xlarge)
 {
-  #developer-projects .dp-cell .dp-cell-content a{
-    margin-top: 0px;
-  }
-  #designer-projects > div{
-    margin: 50px;
-    overflow: hidden;
-  }
-  #designer-projects > div img{
-    border: none;
-    padding: 0px;
-  }
-  #designer-projects > div .desp-content{
-    position: absolute;
-  }
-  #designer-projects > div:hover img{
-    filter: blur(6px);
-  }
-  #designer-projects > div:hover .desp-content{
-    height: 100%;
-  }
+  #developer-projects{
+    .dp-cell{
+      .dp-cell-content{
+        a{
+          margin-top: 0px;
+        }
+      } 
+    } 
+  } 
+  #designer-projects{
+    >div{
+      margin: 50px;
+      overflow: hidden;
+      img{
+        border: none;
+        padding: 0px;
+      }
+      .desp-content{
+        position: absolute;
+      }
+      &:hover{
+        img{
+          filter: blur(6px);
+        }
+        .desp-content{
+          height: 100%;
+        }
+      } 
+    }
+  } 
 }
 
