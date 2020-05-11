@@ -1,6 +1,5 @@
-<section class="section-imp section-reveal" id="contact-section" data-magellan-target="contact">
-  <div id="contact-sectionBG"></div>
-  <p class="h4 hfont">Transmit Message to Anthony</p>
+<section class="section-imp" id="contact-section">
+  <p class="h4">greeting</p>
   <div id="contact-wrapper">
     <div id="contact-photo">
       <img id="photo-me" src="<?php bloginfo('template_url'); ?>/assets/images/profile-pic.png" />

@@ -19,7 +19,6 @@ get_header();?>
   <?php echo get_template_part('inc/sections/experience'); ?>
   <?php echo get_template_part('inc/sections/contact'); ?>
   <?php echo get_template_part('inc/sections/game'); ?>
-  <?php echo get_template_part('inc/sections/hyperspace'); ?>
 </main>
 
 <?php get_footer();
