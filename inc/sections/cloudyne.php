@@ -1,19 +1,49 @@
 <section class="section-imp" id="cloudyne-section">
-  <!--  
-      Cloudyne Limited
-      Cloudyne is a business that focuses on providing small businesses with up-to-date websites with the latest trends. Websites can be expensive and can come as a shock to some people, so we provide them with reasonable prices for the size of their business. Alongside websites, Cloudyne offers domain and hosting with no increased recurring pricing. I set this business up to continue my personal development and a way for people to promote their business without having to pay a fortune for a bare minimum, basic looking websites.
-        Projects
-            Cloudyne
-            likes
-              Colour Scheme
-              WHMCS Connection
-              Animations
-          <a class="prev-website" href="https://www.cloudyne.co.uk" target="_blank">www.cloudyne.co.uk</a>
-            dislikes
-            Content
-            Poor Imagery
-          A business that offers design and development for websites, hosting and SEO services.
 
+	<?php echo get_template_part('inc/pageoverlay'); ?>
+
+	<h2 class="h2 hfont">Cloudyne Limited</h2>
+	<p>Cloudyne is a business that focuses on providing small businesses with up-to-date websites with the latest trends. Websites can be expensive and can come as a shock to some people, so we provide them with reasonable prices for the size of their business. Alongside websites, Cloudyne offers domain and hosting with no increased recurring pricing. I set this business up to continue my personal development and a way for people to promote their business without having to pay a fortune for a bare minimum, basic looking websites.</p>
+
+	<h3 class="h3 hfont">Projects</h3>
+	<div>
+		<div class="diamond"></div>
+		<div class="cloudyne-longline"></div>
+
+		<div class="cloudyne-mediumline"></div>
+		<div class="cloudyne-mediumline"></div>
+
+		<div class="cloudyne-shortline"></div>
+		<div class="cloudyne-shortline"></div>
+
+		<div class="diamond"><div></div></div>
+		<div class="diamond"><div></div></div>
+		<div class="diamond"><div></div></div>
+		<div class="diamond"><div></div></div>
+		<div class="diamond"><div></div></div>
+	</div>
+
+	<div class="border-box" id="project1">
+		<div>
+			<p class="h2 hfont">Cloudyne</p>
+			<p>A business that offers design and development for websites, hosting and SEO services.</p>
+		</div>
+		<div>
+			<ul>likes
+				<li>Colour Scheme</li>
+				<li>WHMCS Intregation</li>
+				<li>Animations</li>
+			</ul>
+			<a href="https://www.cloudyne.co.uk" target="_blank" rel="noopener noreferrer">www.cloudyne.co.uk</a>
+			<ul>dislikes
+				<li>Content</li>
+				<li>Imagery</li>
+			</ul>
+		</div>
+	</div>
+
+  <!--  
+        Projects
             Shea-Me
             likes
             Colour Scheme
