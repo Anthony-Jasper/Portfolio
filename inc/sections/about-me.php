@@ -8,15 +8,15 @@
 	<?php echo get_template_part('inc/boxstyle'); ?> <!-- Add Class Tabs via Javascript -->
 	<?php echo get_template_part('inc/boxstyle'); ?> <!-- Add Class Tabs via Javascript -->
 
-	<div class="tabs-content" data-tabs-content="example-tabs">
-		<div class="tabs-panel is-active" id="panel1">
+	<div class="tabs-content" data-tabs-content="about-tabs">
+		<div class="tabs-panel is-active" id="about-personal">
 			<p>Hello, my name is Anthony Jasper and I’m a 29 year old male from an area known as Kent, England. I’ve been travelling the Sol system for the last 2 years now and thought it was time to note down my life's journey and how I came to be where I am now.</p>
 			<p>I started with a dream of entering the game development scene. I went to University for 3 years studying game design and software engineering, being awarded with the degree ‘bachelor of engineering’ with a second class honours 1st division. After graduating, I spent the next year looking to get a foot into the door but was turned away everytime. So I decided to get in contact with a few friends from college and we started self-teaching ourselves on App Development using Unity.</p>
 			<p> 6 months later we had published a simple card matching game on the google store that featured a local highscore, card cover customisation and difficulty selectors. It did okay on the store, but with it being a simple game, it didn’t take off. The App development didn’t last for much longer after that. One of the developers suggested we move onto web development since he had some experience in creating websites.</p>
 			<p>This is where we ended up creating Cloudyne and the start of my adventure into becoming a front-end web developer &amp; designer begins.</p>    
 		</div>
-		<div class="tabs-panel" id="panel2">
-				<div class="border-box">
+		<div class="tabs-panel" id="about-skills">
+				<div class="border-box" id="about-skills1">
 				 <div>
 					<h2>Software</h2>
 					<ul>
@@ -38,7 +38,7 @@
 					</ul>
 				 </div>
 				</div>
-				<div class="border-box">
+				<div class="border-box" id="about-skills2">
 					<div>
 					<h2>Skills</h2>
 					<ul>
@@ -59,8 +59,8 @@
 					</div>
 				</div>
 		</div>
-		<div class="tabs-panel" id="panel3">
-			<div class="border-box">
+		<div class="tabs-panel" id="about-interests">
+			<div class="border-box" id="about-interests1">
 				<div>
 					<h2>Sports</h2>
 					<ul>
@@ -74,7 +74,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="border-box">
+			<div class="border-box" id="about-interests2">
 				<div>
 					<h2>E-Sports</h2>
 					<ul>
@@ -82,7 +82,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="border-box">
+			<div class="border-box" id="about-interests3">
 				<div>
 					<h2>Books</h2>
 					<ul>
@@ -95,7 +95,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="border-box">
+			<div class="border-box" id="about-interests4">
 				<div>
 					<h2>Gaming</h2>
 					<ul>
@@ -108,19 +108,19 @@
 					</ul>
 				</div>
 			</div>
-			<div class="border-box">
+			<div class="border-box" id="about-interests5">
 				<div>
 					<h2>Analyzing Websites</h2>
 					<p>When surfing the web or looking for some inspiration, I will occasionally open the developer tools and inspect the code. Doing so allows me to view how other developers were able to achieve the result of a certain feature. I will usually compare it to how I would go about creating the feature or try to understand why the developer took the path he did. This then allows me to get a better understanding and learn new techniques.</p>
 				</div>
 			</div>
-			<div class="border-box">
+			<div class="border-box" id="about-interests6">
 				<div>
 					<h2>Creating and Experimenting with Website Animations</h2>
 					<p>Adding animations to a website makes it more appealing and interactive for the user when they visit the website. Different animation styles, determine how you want the information to be presented to the user, e.g. flashing animation draws the users attention, whereas sliding animations sets a hierarchy between two elements. Experimenting with animations allow me to create multiple layers and present information in different but exciting ways.</p>
 				</div>
 			</div>	
-			<div class="border-box">
+			<div class="border-box" id="about-interests7">
 				<div>
 					<h2>Favourite Websites</h2>
 					<ul>

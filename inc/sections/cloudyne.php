@@ -24,11 +24,11 @@
 	</div>
 
 	<div class="border-box" id="project1">
-		<div>
+		<div class="project-front">
 			<p class="h2 hfont">Cloudyne</p>
 			<p>A business that offers design and development for websites, hosting and SEO services.</p>
 		</div>
-		<div>
+		<div class="project-back">
 			<ul>likes
 				<li>Colour Scheme</li>
 				<li>WHMCS Intregation</li>
@@ -42,55 +42,134 @@
 		</div>
 	</div>
 
+	<div class="border-box" id="project2">
+		<div class="project-front">
+			<p class="h2 hfont">Shea-Me</p>
+			<p>An e-commerce site that sells shea body butter products that help invigorates the senses, reduce acne and other benefits to the skin.</p>
+		</div>
+		<div class="project-back">
+			<ul>likes
+				<li>Colour Scheme</li>
+				<li>Modern Layout</li>
+				<li>Micro Animations</li>
+			</ul>
+			<a href="https://www.cloudyne.co.uk" target="_blank" rel="noopener noreferrer">www.cloudyne.co.uk</a>
+			<ul>dislikes
+				<li>Cluttered</li>
+				<li>Poor Imagery</li>
+				<li>Poor Content</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="border-box" id="project3">
+		<div class="project-front">
+			<p class="h2 hfont">Sherwood &amp; Hope</p>
+			<p>Independant Funeral Directors in Kent, that handle everything from arranging a funeral, to on the day transportation of a loved one.</p>
+		</div>
+		<div class="project-back">
+			<ul>likes
+				<li>Faded Background</li>
+				<li>One Page</li>
+				<li>Detailed Content</li>
+			</ul>
+			<a href="https://www.cloudyne.co.uk" target="_blank" rel="noopener noreferrer">www.cloudyne.co.uk</a>
+			<ul>dislikes
+				<li>Colour Scheme</li>
+				<li>Header &amp; Footer Layouts</li>
+				<li>UX</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="border-box" id="project4">
+		<div class="project-front">
+			<p class="h2 hfont">Pout &amp; Sparkle</p>
+			<p>A beauty studio who’s qualified as a hairdresser, beautician and elite technician in plasma pen-fibroblasting.</p>
+		</div>
+		<div class="project-back">
+			<ul>likes
+				<li>Colour Scheme</li>
+				<li>Good Content</li>
+				<li>Section Seperators</li>
+			</ul>
+			<a href="https://www.cloudyne.co.uk" target="_blank" rel="noopener noreferrer">www.cloudyne.co.uk</a>
+			<ul>dislikes
+				<li>Button Sparkles</li>
+				<li>Poor Imagery</li>
+				<li>Page Layout</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="border-box" id="project5">
+		<div class="project-front">
+			<p class="h2 hfont">Medway Vegan festivals</p>
+			<p>Promotes and Hosts Vegan Festivities across Medway, Kent.</p>
+		</div>
+		<div class="project-back">
+			<ul>likes
+				<li>Page Layout</li>
+				<li>Colour Scheme</li>
+				<li>Minimalist</li>
+			</ul>
+			<a href="https://www.cloudyne.co.uk" target="_blank" rel="noopener noreferrer">www.cloudyne.co.uk</a>
+			<ul>dislikes
+				<li>UX</li>
+				<li>Booking System</li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+
+	<h3 class="h3 hfont">Roles</h3>
+
+	<ul class="tabs" data-tabs id="role-tabs">
+  	<li class="tabs-title is-active">
+			<div class="diamond"></div>
+			<a href="#role-director" aria-selected="true">Director</a>
+		</li>
+  	<li class="tabs-title">
+			<div class="diamond"></div>
+			<a data-tabs-target="role-financer" href="#role-financer">Financer</a>
+		</li>
+		<li class="tabs-title">
+			<div class="diamond"></div>
+			<a data-tabs-target="role-developer" href="#role-developer">Front-end Developer</a>
+		</li><li class="tabs-title">
+			<div class="diamond"></div>
+			<a data-tabs-target="role-hosting" href="#role-hosting">Hosting Management</a>
+		</li><li class="tabs-title">
+			<div class="diamond"></div>
+			<a data-tabs-target="role-legal" href="#role-legal">Legal</a>
+		</li><li class="tabs-title">
+			<div class="diamond"></div>
+			<a data-tabs-target="role-customer" href="#role-customer">Customer Support</a>
+		</li>
+	</ul>
+
+	<div class="tabs-content" data-tabs-content="role-tabs">
+		<div class="tabs-panel is-active" id="role-director">
+			<p>As a director I make decisions on how to progress the business, such as overseeing the performance of the business, maintaining the finance department, proposing different forms of strategy and technology upgrades.</p>
+		</div>
+		<div class="tabs-panel" id="role-financer">
+			<p>I maintain the finance documents such as Profit &amp; Loss, Invoicing, Accounts and final word on any expenses.</p>
+		</div>
+		<div class="tabs-panel" id="role-developer">
+			<p>All HTML, CSS and JQuery files, Optimising and handling of images and fonts. Also manage and maintain any CMS back-ends such as products and plugins.</p>
+		</div>
+		<div class="tabs-panel" id="role-hosting">
+			<p> Handling of domains available and contact with domain registrars, FTP, SMTP, SSL and file management.</p>
+		</div>
+		<div class="tabs-panel" id="role-legal">
+			<p> Handling of contracts for website agreements, maintaining the websites Terms and Conditions, maintaining Privacy Policy and keeping up with GDPR regulations.</p>
+		</div>
+		<div class="tabs-panel" id="role-customer">
+			<p> Help any customers add any updates to their website, upgrade their hosting or help with any inquiries regarding any of the services they are receiving.</p>
+		</div>
+</div>
   <!--  
         Projects
-            Shea-Me
-            likes
-            Colour Scheme
-            Modern Layout
-            Micro Animations
-          <a class="prev-website" href="https://www.shea-me.com" target="_blank">www.shea-me.com</a>
-            dislikes
-            Cluttered
-            Poor Imagery
-            Poor Content
-          An e-commerce site that sells shea body butter products that help invigorates the senses, reduce acne and other benefits to the skin.
-
-          Sherwood &amp; Hope</An>
-            likes
-            Faded Background
-            One Page
-            Detailed Content
-          <a class="prev-website" href="https://www.sherwoodandhope.co.uk" target="_blank">www.sherwoodandhope.co.uk</a>
-            dislikes
-            Colour Scheme
-            Header &amp; Footer Layouts
-            UX
-          Independant Funeral Directors in Kent, that handle everything from arranging a funeral, to on the day transportation of a loved one.
-
-          Pout &amp; Sparkle
-          likes
-            Colour Scheme
-            Good Content
-            Section Seperators
-          <a class="prev-website" href="https://www.poutandsparkle.co.uk"target="_blank">www.poutandsparkle.co.uk</a>
-            dislikes
-            Button Sparkles
-            Poor Imagery
-            Page Layout
-          A beauty studio who’s qualified as a hairdresser, beautician and elite technician in plasma pen-fibroblasting.
-
-          Medway Vegan Festivals
-            likes
-            Page Layout
-            Colour Scheme
-            Minimalist
-          <a class="prev-website" href="https://projects.cloudyne.co.uk/medwayveganfestival" target="_blank">Under Development</a>
-            dislikes
-            UX
-            Booking System
-          Promotes and Hosts Vegan Festivities across Medway, Kent.
-
           Tangible
             likes
             Informative
@@ -100,19 +179,5 @@
             Colour Scheme
             Landing Page
           Provides product management and training courses to individuals or businesses.
-        Roles
-      Director
-      Financer
-      Front-end Developer
-      Hosting Management
-      Legal
-      Customer Support
-
-          As a director I make decisions on how to progress the business, such as overseeing the performance of the business, maintaining the finance department, proposing different forms of strategy and technology upgrades.
-          I maintain the finance documents such as Profit &amp; Loss, Invoicing, Accounts and final word on any expenses.
-          All HTML, CSS and JQuery files, Optimising and handling of images and fonts. Also manage and maintain any CMS back-ends such as products and plugins.
-          Handling of domains available and contact with domain registrars, FTP, SMTP, SSL and file management.
-          Handling of contracts for website agreements, maintaining the websites Terms and Conditions, maintaining Privacy Policy and keeping up with GDPR regulations.
-          Help any customers add any updates to their website, upgrade their hosting or help with any inquiries regarding any of the services they are receiving.
 -->
 </section>
