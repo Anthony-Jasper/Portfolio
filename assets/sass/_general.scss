@@ -29,3 +29,18 @@ ul{
 a{
    cursor: pointer;
 }
+
+.hfont{
+	font-family: 'Particle';
+	letter-spacing: 1.5px;
+}
+.diamond{
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	border: 1px solid white;
+	box-shadow: inset 0px 0px 0px 3px black;
+	transform: rotateZ(45deg);
+	top: 0;
+	left: 2px;
+}

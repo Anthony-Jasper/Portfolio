@@ -2,13 +2,11 @@ jQuery( document ).ready(function( $ ) {
   $( document ).foundation();
   // Theme JS here
 
-  $("#hamburger").click(function () {
-    if($('#hamburger').hasClass('is-active')){
-      $('#hamburger').removeClass('is-active');
-      $('#boring-nav').removeClass('expand-nav');
+  $(".hamburger").click(function () {
+    if($(this).hasClass('is-active')){
+      $('.hamburger').removeClass('is-active');
     }else{
-      $('#hamburger').addClass('is-active');
-      $('#boring-nav').addClass('expand-nav');
+      $(this).addClass('is-active');
     }
   });
 
