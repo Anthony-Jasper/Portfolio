@@ -16,7 +16,7 @@
     </div>
   </div>
   
-  <p><span>Blank</span>Blank</p>
+  <p class="boxstyle-content">Blank</p>
 
   <div class="boxstyle-right">
 

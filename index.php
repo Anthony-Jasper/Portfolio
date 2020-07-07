@@ -15,8 +15,8 @@
 get_header();?>
 <main id="main">
   <?php echo get_template_part('inc/sections/about-me'); ?>
-  <?php echo get_template_part('inc/sections/cloudyne'); ?>
   <?php echo get_template_part('inc/sections/experience'); ?>
+  <?php echo get_template_part('inc/sections/cloudyne'); ?>
   <?php echo get_template_part('inc/sections/contact'); ?>
   <?php echo get_template_part('inc/sections/game'); ?>
 </main>

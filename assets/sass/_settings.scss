@@ -76,8 +76,9 @@ $foundation-palette: (
   alert: #cc4b37,
 );
 // Custom Variables
-$gradient-bblue: #6f86d6;
-$gradient-tblack: #020111;
+$custom-dGray: #333333; // overlay lines //boxstyle fill // boxstyle border
+$custom-lGray: #666666; // boxstyle lines
+$custom-white: #C8CDD0; // white Colour
 // ---------
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
@@ -800,7 +801,7 @@ $table-stack-breakpoint: medium;
 
 $tab-margin: 0;
 $tab-background: $white;
-$tab-color: $primary-color;
+$tab-color: $white;
 $tab-background-active: $light-gray;
 $tab-active-color: $primary-color;
 $tab-item-font-size: rem-calc(12);

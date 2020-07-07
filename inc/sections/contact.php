@@ -1,6 +1,5 @@
 <section class="section-imp" id="contact-section">
 
-	<?php echo get_template_part('inc/pageoverlay'); ?>
 
 	<h2 class="h2 hfont">Contact</h2>
 

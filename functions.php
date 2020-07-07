@@ -124,7 +124,7 @@ function cosmic_scripts() {
   
   wp_enqueue_style( 'cosmic-style', get_stylesheet_uri() );
   
-  wp_enqueue_script( 'cosmic-js', get_template_directory_uri() . '/assets/js/vendor/app.js', array( 'jquery' ), '20151215', true );
+	wp_enqueue_script( 'cosmic-js', get_template_directory_uri() . '/assets/js/vendor/app.js', array( 'jquery' ), '20151215', true );
   wp_enqueue_script( 'cosmic-general', get_template_directory_uri() . '/assets/js/general.js', array( 'jquery' ), '', true );
   wp_enqueue_script( 'cosmic-game', get_template_directory_uri() . '/assets/js/game.js', array( 'jquery' ), '', false );
 

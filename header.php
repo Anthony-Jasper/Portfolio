@@ -21,14 +21,15 @@
 </head>
   <body <?php body_class(); ?> id="home"> 
     <?php /* echo get_template_part('inc/recruiter'); */ ?>
+		<?php echo get_template_part('inc/pageoverlay'); ?>
     <header id="main-header">
-      <?php echo get_template_part('inc/pageoverlay'); ?>
 
-      <h1 class="h1 hfont">Anthony Jasper</h1>
-      <h2 class="h2 hfont">Front-End Develoepr & Designer</h2>
-
-      <?php echo get_template_part('inc/boxstyle'); ?>
-      <?php echo get_template_part('inc/boxstyle'); ?>
+      <h1 class="h1">Anthony Jasper</h1>
+      <h2 class="h2">Front-End Develoepr & Designer</h2>
+			<div id="header-boxflex">
+				<?php echo get_template_part('inc/boxstyle'); ?>
+				<?php echo get_template_part('inc/boxstyle'); ?>
+			</div>
 
     </header>
     

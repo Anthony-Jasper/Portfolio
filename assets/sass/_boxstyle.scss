@@ -1,0 +1,113 @@
+
+.boxstyle-container{
+	background: $custom-dGray;
+	border: 1px solid $custom-lGray;
+	box-shadow: inset 0px 0px 0px 5px $black;
+	cursor: pointer;
+	&:hover{
+		box-shadow: inset 0px 0px 0px 5px $custom-white;
+	}
+	.boxstyle-left{
+		.boxstyle-linedown{
+			position: relative;
+			left: 15px;
+			top: 28px;
+			width: 7px;
+		}
+		.boxstyle-diamond{
+			top: 11px;
+			left: 11px;
+		}
+	}
+	.boxstyle-lineshort{
+		position: absolute;
+		width: 1px;
+		height: 25px;
+		background: $custom-white;
+		&:last-of-type{
+			right: 0;
+		}
+	}
+	.boxstyle-linelong{
+		position: absolute;
+		width: 1px;
+		height: 55px;
+		background: $custom-white;
+		left: 3px;
+		top: 3px;
+	}
+	.boxstyle-diamond{
+		position: absolute;
+    width: 15px;
+    height: 15px;
+    background: $custom-white;
+    border: 1px solid $custom-white;
+    -webkit-box-shadow: inset 0px 0px 0px 3px $custom-dGray;
+    box-shadow: inset 0px 0px 0px 2px $custom-dGray;
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+	}
+	.boxstyle-lineright{
+		position: relative;
+    left: 24px;
+    top: 18px;
+    width: 8px;
+		transform: rotate(-90deg);
+		.boxstyle-lineshort{
+			&:last-of-type{
+				right: 1px;
+			}
+		}
+	}
+	p{
+		position: relative;
+    text-align: center;
+    width: 100%;
+		top: 50%;
+    padding: 5px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+		font-size: 12px;
+		transform: translateY(-50%);
+		color: $primary-color;
+		span{
+			display: block;
+			text-transform: uppercase;
+			letter-spacing: 2.5px;
+			font-size: 16px;
+			color: $custom-white;
+		}
+	}
+	.boxstyle-right{
+		position: absolute;
+    bottom: 0;
+		right: 0;
+		.boxstyle-diamond{
+			right: 11px;
+    	bottom: 11px;
+		}
+	}
+	.boxstyle-lineup{
+		position: relative;
+    right: 15px;
+    top: -28px;
+    width: 8px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-180deg);
+		.boxstyle-lineshort:last-of-type{
+			right: 1px;
+		}
+	}
+	.boxstyle-lineleft{
+		position: relative;
+    right: 24px;
+    top: -18px;
+    width: 8px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-270deg);
+		.boxstyle-lineshort:last-of-type{
+			right: 1px;
+		}
+	}
+}
