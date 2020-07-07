@@ -19,9 +19,17 @@
 
 	<?php wp_head(); ?>
 </head>
-  <body <?php body_class(); ?> id="home"> 
-    <?php /* echo get_template_part('inc/recruiter'); */ ?>
+	<body <?php body_class(); ?> id="home"> 
+	<!-- particles.js container --> 
+		<div id="particles-js"></div> 
 		<?php echo get_template_part('inc/pageoverlay'); ?>
+		<div id="star-container">
+			<div class="shooting-star"></div>
+			<div class="shooting-star"></div>
+			<div class="shooting-star"></div>
+			<div class="shooting-star"></div>
+			<div class="shooting-star"></div>
+		</div>
     <header id="main-header">
 
       <h1 class="h1">Anthony Jasper</h1>

@@ -21,3 +21,30 @@ Combined Sections
 #cloudyne-section{
 	height: 100em;
 }
+#game-section{
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+	margin-top: 20em;
+  .h4{
+		position: relative;
+		text-align: center;
+    display: block;
+  }
+  span{
+    color: $primary-color;
+    display: block;
+  }
+  ul{
+    display: inline-block;
+    margin: 0px auto;
+    li{
+      display: inline-block;
+      text-align: center;
+      margin: 0 10px;
+      &:first-of-type{
+        margin-left: 0;
+      }
+    }
+  }
+}

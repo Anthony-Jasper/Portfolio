@@ -1,6 +1,3 @@
-<div id="page-background">
-	<img id="background-image" alt="cluster of stars" srcset="<?php bloginfo('template_url'); ?>/images/header-background.jpg">
-</div>
 <div id="page-overlay" >
 	<!-- Top Half -->
 	<div id="page-topbar">

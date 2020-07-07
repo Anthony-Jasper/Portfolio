@@ -128,6 +128,13 @@ function cosmic_scripts() {
   wp_enqueue_script( 'cosmic-general', get_template_directory_uri() . '/assets/js/general.js', array( 'jquery' ), '', true );
   wp_enqueue_script( 'cosmic-game', get_template_directory_uri() . '/assets/js/game.js', array( 'jquery' ), '', false );
 
+	wp_enqueue_script( 'cosmic-star', get_template_directory_uri() . '/assets/js/shooting-star.js', array( 'jquery' ), '', true );
+
+	
+  wp_enqueue_script( 'cosmic-anime', get_template_directory_uri() . '/assets/js/vendor/anime.min.js', array( 'jquery' ), '', true );
+  wp_enqueue_script( 'cosmic-particles', get_template_directory_uri() . '/assets/js/vendor/particles.js', array( 'jquery' ), '', true );
+  wp_enqueue_script( 'cosmic-particlesmin', get_template_directory_uri() . '/assets/js/vendor/particles.min.js', array( 'jquery' ), '', true );
+	wp_enqueue_script( 'cosmic-partical', get_template_directory_uri() . '/assets/js/particle-custom.js', array( 'jquery' ), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'cosmic_scripts' );
 

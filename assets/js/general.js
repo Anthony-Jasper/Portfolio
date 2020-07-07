@@ -17,7 +17,7 @@ jQuery( document ).ready(function( $ ) {
 			});
     }
 	});
-
+	shootingStars();
 	var boxContent = ["coding", "design", "private", "knowledge", "entertainment", "Director", "Developer", "Mail sorter", "Developer"];
 	var boxContentSpan = ["projects", "projects", "personal", "skills", "interests", "cloudyne limited", "music streaming app", "royal mail", "match'em up app"];
 	var roles = ["Director", "Financer", "front-end developer", "hosting managament", "legal", "customer support"];
