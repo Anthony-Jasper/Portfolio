@@ -129,3 +129,22 @@ a{
   }
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $black; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darken($primary-color, 20%); 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darken($primary-color, 30%); 
+}

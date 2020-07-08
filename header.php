@@ -30,13 +30,16 @@
 			<div class="shooting-star"></div>
 			<div class="shooting-star"></div>
 		</div>
+		
+		<?php echo get_template_part('inc/recruiter'); ?>
     <header id="main-header">
 
       <h1 class="h1">Anthony Jasper</h1>
       <h2 class="h2">Front-End Develoepr & Designer</h2>
 			<div id="header-boxflex">
-				<?php echo get_template_part('inc/boxstyle'); ?>
-				<?php echo get_template_part('inc/boxstyle'); ?>
+				<button id="open-developer" class="open-projects" type="button" data-toggle="offCanvas" aria-expanded="false" aria-controls="offCanvas"><?php echo get_template_part('inc/boxstyle'); ?></button>
+				
+				<button id="open-designer" class="open-projects" type="button" data-toggle="offCanvasRight" aria-expanded="false" aria-controls="offCanvasRight"><?php echo get_template_part('inc/boxstyle'); ?></button>
 			</div>
 
     </header>

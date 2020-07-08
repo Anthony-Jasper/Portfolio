@@ -191,7 +191,7 @@
 							</div>
 						</div>
 						<div class="project-back">
-							<ul>>LIKES
+							<ul>LIKES
 								<li>Page Layout</li>
 								<li>Minimalist</li>
 							</ul>

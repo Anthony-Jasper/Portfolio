@@ -13,16 +13,14 @@
     <div id="triangle-topleft"></div>
     <div id="triangle-topright"></div>
     <p class="pfont h1">Anthony Jasper</p>
-    <p class="h6">front-end web developer &amp; designer</p>
-    <p id="rec-github"><a href="https://github.com/Anthony-Jasper/Portfolio">View Code on GitHub</a></p>
     <div class="beams">
       <hr>
       <hr>
     </div>
-    <p class="pfont h5">Developer Projects</p>
+    <p class="pfont h5">Coding Projects</p>
     <div id="developer-projects">
       <div class="dp-cell">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/cloudyne_background.jpeg" /> 
+        <img src="<?php bloginfo('template_url'); ?>/assets/images/cloudyne-background.jpg" /> 
         <div class="dp-cell-content">
           <p class="hfont h5">Cloudyne Limited</p>
           <div>
@@ -52,7 +50,7 @@
         </div>
       </div>
       <div class="dp-cell">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/shea-me_background.jpeg" /> 
+        <img src="<?php bloginfo('template_url'); ?>/assets/images/shea-me_background.jpg" /> 
         <div class="dp-cell-content">
           <p class="hfont h5">Shea-Me</p>
           <div>
@@ -110,7 +108,7 @@
         </div>
       </div>
       <div class="dp-cell">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/sherwood_background.jpeg" /> 
+        <img src="<?php bloginfo('template_url'); ?>/assets/images/sherwood_background.jpg" /> 
         <div class="dp-cell-content">
           <p class="hfont h5">Sherwood and Hope</p>
           <div>
@@ -139,7 +137,7 @@
         </div>
       </div>
       <div class="dp-cell">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/medway_background.jpeg" /> 
+        <img src="<?php bloginfo('template_url'); ?>/assets/images/medway_background.jpg" /> 
         <div class="dp-cell-content">
           <p class="hfont h5">Medway Vegan Festivals</p>
           <div>
@@ -168,43 +166,322 @@
         </div>
       </div>
     </div>
+		<div class="beams">
+			<hr>
+			<hr>
+		</div>
+		<p class="pfont h5">Currently Developing</p>
+		<div id="underdevelopment">
+			<p>I am currently in the process of learning React, following tutorials from <a href="https://scrimba.com/g/glearnreact" target="_blank" rel="noopener noreferrer">scrimba</a>. I am aiming on being able to create the e-commerce template design I created fully in React.</p>
+			<p>I have currently completed:</p>
+			<ul>
+				<li>Implemented JSX</li>
+				<li>Created All Components</li>
+				<li>Seperated Components Into Seperate Files</li>
+				<li>Imported and Exported Components</li>
+				<li>Props</li>
+				<li>Json Files to Store / Retrieve Data</li>
+			</ul>
+		</div>
+	</div>
+	<div class="off-canvas position-right" id="offCanvasRight" data-off-canvas>
+		<!-- <div id="star-container">
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+    </div> -->
+    <button class="close-button" aria-label="Close menu" type="button" data-close>
+      <span aria-hidden="true">Return</span>
+    </button>
+    <div id="triangle-topleft"></div>
+    <div id="triangle-topright"></div>
+    <p class="pfont h1">Anthony Jasper</p>
     <div class="beams">
       <hr>
       <hr>
     </div>
-    <p class="pfont h5">Designer Projects</p>
-    <div id="designer-projects">
-      <div>
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/ecommerce_background.png" />
-        <div class="desp-content">
-          <p class="hfont h5">E-Commerce Template</p>
-          <p>This template was created with the focus on selling men's and women's clothing. It also features contests that allows designers to submit their designs for shirts etc every month.</p>
-          <p class="hfont h6">Template Targets</p>
-          <ul>
-            <li>Gradient colours</li>
-            <li>Easy on the eye colours</li>
-            <li>Card Focal Points</li>
-            <li>Powerful Imagery</li>
-            <li>Compact but Fluid</li>
-          </ul>
-        </div>
-        <a href="https://preview.uxpin.com/ac2e5b1750025319fcbb99235e6dc0c423b8c73f#/pages/110105689/simulate/sitemap?mode=i" target="_blank">Interactive Link</a>
-      </div>
-      <div>
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/streamer_background.png" />
-        <div class="desp-content">
-          <p class="hfont h5">Media Streaming Template</p>
-          <p>This template was created with the focus on media streaming, mostly for Twitch.tv. It features Twitches API to allow streaming on the website, merch store and a sponsor section</p>
-          <p class="hfont h6">Template Targets</p>
-          <ul>
-            <li>Easy Navigation</li>
-            <li>Large Images/Videos</li>
-            <li>Minimal use of bright colours</li>
-            <li>Minimal use of text content</li>
-          </ul>
-        </div>
-        <a href="https://preview.uxpin.com/85b1db3d2d958d033a62b3ef4e957eb3755b32fc#/pages//simulate/sitemap?mode=i" target="_blank">Interactive Link</a>
-      </div>
-    </div>
-  </div>
+    <p class="pfont h5">Design Projects</p>
+		<div id="designer-projects"> 
+			<!-- ORBIT - ART -->
+			<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+				<div class="orbit-wrapper">
+					<div class="orbit-controls">
+						<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+						<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+					</div>
+					<ul class="orbit-container">
+						<li class="is-active orbit-slide">
+							<figure class="orbit-figure">
+								<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/art_template/Landing.png" /> 
+								<figcaption class="orbit-caption">Landing Section.</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/art_template/Stalls.png" /> 
+								<figcaption class="orbit-caption">Convention Stalls Section</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/art_template/mywork.png" /> 
+								<figcaption class="orbit-caption">Services Section</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/art_template/recent.png" /> 
+								<figcaption class="orbit-caption">Recent Commission Done Section</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/art_template/portfolio.png" /> 
+								<figcaption class="orbit-caption">Potfolio Page</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/art_template/shop.png" /> 
+								<figcaption class="orbit-caption">Shop Page</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/art_template/Contact.png" /> 
+								<figcaption class="orbit-caption">Contact Page</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/art_template/commission.png" /> 
+								<figcaption class="orbit-caption">Commission Page</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</div>
+				<nav class="orbit-bullets">
+					<button class="is-active" data-slide="0">
+						<span class="show-for-sr">First slide details.</span>
+						<span class="show-for-sr" data-slide-active-label>Current Slide</span>
+					</button>
+					<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+					<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+					<button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+					<button data-slide="4"><span class="show-for-sr">Fifth slide details.</span></button>
+					<button data-slide="5"><span class="show-for-sr">Sixth slide details.</span></button>
+					<button data-slide="6"><span class="show-for-sr">Seventh slide details.</span></button>
+					<button data-slide="7"><span class="show-for-sr">eighth slide details.</span></button>
+				</nav>
+			</div>
+			<!-- ORBIT END - ART -->
+			<!-- ORBIT - COMMERCE -->
+			<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+				<div class="orbit-wrapper">
+					<div class="orbit-controls">
+						<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+						<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+					</div>
+					<ul class="orbit-container">
+						<li class="is-active orbit-slide">
+							<figure class="orbit-figure">
+								<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/commerce_template/landing.png" /> 
+								<figcaption class="orbit-caption">Landing Section.</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/commerce_template/contest.png" /> 
+								<figcaption class="orbit-caption">Convention Stalls Section</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/commerce_template/Featured.png" /> 
+								<figcaption class="orbit-caption">Services Section</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/commerce_template/shirts_hoodies.png" /> 
+								<figcaption class="orbit-caption">Recent Commission Done Section</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/commerce_template/tags.png" /> 
+								<figcaption class="orbit-caption">Potfolio Page</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/commerce_template/realworld.png" /> 
+								<figcaption class="orbit-caption">Shop Page</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/commerce_template/footer.png" /> 
+								<figcaption class="orbit-caption">Contact Page</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/commerce_template/Shop.png" /> 
+								<figcaption class="orbit-caption">Commission Page</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/commerce_template/signup.png" /> 
+								<figcaption class="orbit-caption">Commission Page</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/commerce_template/singlepage_product.png" /> 
+								<figcaption class="orbit-caption">Commission Page</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/commerce_template/design_winner.png" /> 
+								<figcaption class="orbit-caption">Commission Page</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</div>
+				<nav class="orbit-bullets">
+					<button class="is-active" data-slide="0">
+						<span class="show-for-sr">First slide details.</span>
+						<span class="show-for-sr" data-slide-active-label>Current Slide</span>
+					</button>
+					<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+					<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+					<button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+					<button data-slide="4"><span class="show-for-sr">Fifth slide details.</span></button>
+					<button data-slide="5"><span class="show-for-sr">Sixth slide details.</span></button>
+					<button data-slide="6"><span class="show-for-sr">Seventh slide details.</span></button>
+					<button data-slide="7"><span class="show-for-sr">eighth slide details.</span></button>
+					<button data-slide="8"><span class="show-for-sr">ninth slide details.</span></button>
+					<button data-slide="9"><span class="show-for-sr">tenth slide details.</span></button>
+					<button data-slide="10"><span class="show-for-sr">eleventh slide details.</span></button>
+				</nav>
+			</div>
+			<!-- ORBIT END - COMMERCE -->
+			<!-- ORBIT - GAME -->
+			<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+				<div class="orbit-wrapper">
+					<div class="orbit-controls">
+						<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+						<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+					</div>
+					<ul class="orbit-container">
+						<li class="is-active orbit-slide">
+							<figure class="orbit-figure">
+								<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/game_template/landing.png" /> 
+								<figcaption class="orbit-caption">Landing Section.</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/game_template/Intro.png" /> 
+								<figcaption class="orbit-caption">Convention Stalls Section</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/game_template/Features.png" /> 
+								<figcaption class="orbit-caption">Services Section</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/game_template/Events.png" /> 
+								<figcaption class="orbit-caption">Recent Commission Done Section</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/game_template/Gallery.png" /> 
+								<figcaption class="orbit-caption">Potfolio Page</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/game_template/Forums.png" /> 
+								<figcaption class="orbit-caption">Shop Page</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</div>
+				<nav class="orbit-bullets">
+					<button class="is-active" data-slide="0">
+						<span class="show-for-sr">First slide details.</span>
+						<span class="show-for-sr" data-slide-active-label>Current Slide</span>
+					</button>
+					<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+					<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+					<button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+					<button data-slide="4"><span class="show-for-sr">Fifth slide details.</span></button>
+					<button data-slide="5"><span class="show-for-sr">Sixth slide details.</span></button>
+				</nav>
+			</div>
+			<!-- ORBIT END - GAME -->
+			<!-- ORBIT - STREAMER -->
+			<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+				<div class="orbit-wrapper">
+					<div class="orbit-controls">
+						<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+						<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+					</div>
+					<ul class="orbit-container">
+						<li class="is-active orbit-slide">
+							<figure class="orbit-figure">
+								<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/streamer_template/landing.png" /> 
+								<figcaption class="orbit-caption">Landing Section.</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/streamer_template/sponsors.png" /> 
+								<figcaption class="orbit-caption">Convention Stalls Section</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/streamer_template/shop.png" /> 
+								<figcaption class="orbit-caption">Services Section</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/streamer_template/socials.png" /> 
+								<figcaption class="orbit-caption">Recent Commission Done Section</figcaption>
+							</figure>
+						</li>
+						<li class="orbit-slide">
+							<figure class="orbit-figure">
+							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/streamer_template/stream.png" /> 
+								<figcaption class="orbit-caption">Potfolio Page</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</div>
+				<nav class="orbit-bullets">
+					<button class="is-active" data-slide="0">
+						<span class="show-for-sr">First slide details.</span>
+						<span class="show-for-sr" data-slide-active-label>Current Slide</span>
+					</button>
+					<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+					<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+					<button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+					<button data-slide="4"><span class="show-for-sr">Fifth slide details.</span></button>
+				</nav>
+			</div>
+			<!-- ORBIT END - STREAMER -->
+		</div>
+	</div>
   <div class="off-canvas-content" data-off-canvas-content>

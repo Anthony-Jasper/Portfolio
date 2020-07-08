@@ -28,8 +28,8 @@
 //@include foundation-responsive-embed;
 //@include foundation-label;
 //@include foundation-media-object;
-//@include foundation-off-canvas;
-//@include foundation-orbit;
+@include foundation-off-canvas;
+@include foundation-orbit;
 //@include foundation-pagination;
 //@include foundation-progress-bar;
 //@include foundation-slider;
@@ -56,6 +56,7 @@
 @import 'overlay';
 @import 'boxstyle';
 @import 'mixins'; 
+@import 'canvas'; 
 @import 'general';
 @import 'header';
 @import 'general-section';

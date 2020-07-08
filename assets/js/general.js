@@ -29,4 +29,13 @@ jQuery( document ).ready(function( $ ) {
 			$('.boxstyle-content').eq(i).text(roles[i-9]);
 		}
 	}
+	$('.open-projects'). click(function(){
+		$('#home').css('overflow', 'hidden');
+		$('#page-overlay').css('visibility', 'hidden');
+	});
+	$('.close-button'). click(function(){
+		$('#home').css('overflow', 'visible');
+		$('#page-overlay').css('visibility', 'visible');
+	});
+	
 });
