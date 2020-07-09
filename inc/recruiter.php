@@ -198,12 +198,13 @@
     <div id="triangle-topleft"></div>
     <div id="triangle-topright"></div>
     <p class="pfont h1">Anthony Jasper</p>
+		<p class="pfont h5">Design Projects</p>
     <div class="beams">
       <hr>
       <hr>
     </div>
-    <p class="pfont h5">Design Projects</p>
 		<div id="designer-projects"> 
+		<p class="pfont h5">Art Portfolio & Shop Template</p>
 			<!-- ORBIT - ART -->
 			<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
 				<div class="orbit-wrapper">
@@ -277,6 +278,11 @@
 				</nav>
 			</div>
 			<!-- ORBIT END - ART -->
+			<div class="beams">
+				<hr>
+				<hr>
+			</div>
+			<p class="pfont h5">E-Commerce Template</p>
 			<!-- ORBIT - COMMERCE -->
 			<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
 				<div class="orbit-wrapper">
@@ -371,6 +377,11 @@
 				</nav>
 			</div>
 			<!-- ORBIT END - COMMERCE -->
+			<div class="beams">
+				<hr>
+				<hr>
+			</div>
+			<p class="pfont h5">Game Showcase Template</p>
 			<!-- ORBIT - GAME -->
 			<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
 				<div class="orbit-wrapper">
@@ -430,6 +441,11 @@
 				</nav>
 			</div>
 			<!-- ORBIT END - GAME -->
+			<div class="beams">
+				<hr>
+				<hr>
+			</div>
+			<p class="pfont h5">Twitch Streamer Website Template</p>
 			<!-- ORBIT - STREAMER -->
 			<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
 				<div class="orbit-wrapper">

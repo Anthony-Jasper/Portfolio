@@ -1,5 +1,5 @@
 .off-canvas-wrapper{
-  height: 100vh;
+  overflow: visible;
 }
 .position-left{
   overflow-x: hidden;
@@ -97,13 +97,36 @@
 #designer-projects{
 	display: flex;
 	flex-wrap: wrap;
-  justify-content: space-between;
+	justify-content: center;
+	.beams, .h5{
+		width: 100%;
+	}
+	.orbit-bullets{
+		display: none;
+	}
+	.orbit-previous{
+		left: -46px;
+		cursor: pointer;
+	}
+	.orbit-next{
+		right: -46px;
+		cursor: pointer;
+	}
+	.orbit-previous:hover, .orbit-next:hover, .orbit-previous:active, .orbit-next:active, .orbit-previous:focus, .orbit-next:focus{
+		background: $primary-color;
+	}
 }
 .orbit{
-	width: 45%;
+	width: 70%;
 	.orbit-caption{
 		text-align: center;
 	}
+	.orbit-image{
+		object-fit: cover;
+	}
+}
+.orbit-container{
+	height: 400px;
 }
 @include breakpoint(large)
 {
@@ -116,7 +139,7 @@
   #developer-projects, #designer-projects, .beams{
     margin: 0 1.5em;
   }
-  #developer-projects .dp-cell, #designer-projects{
+  #developer-projects .dp-cell{
     flex-wrap: nowrap;
   }
   #developer-projects .dp-cell img{
