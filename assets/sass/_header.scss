@@ -3,28 +3,67 @@
 Header
 ----------------------------------------------------------------------
 */
-#main-header{
-	height: 700px;
-	.h1, .h2{
-		position: relative;
+#main-header {
+  height: 700px;
+  .h1,
+  .h2 {
+    position: relative;
     text-align: center;
-	}
-	.h1{
-		margin-top: 13%;
-	}
-	.h2{
-		font-size: 1.5rem;
-	}
-	.boxstyle-container{
-		position: relative;
-		width: 450px;
-		height: 150px;
-	}
-	#header-boxflex{
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content: space-evenly;
-		align-self: center;
-		margin-top: 150px;
-	}
+  }
+  .h1 {
+    margin-top: 13%;
+  }
+  .h2 {
+    font-size: 1.5em;
+  }
+  .boxstyle-container {
+    position: relative;
+    width: 450px;
+    height: 150px;
+  }
+  #header-boxflex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-self: center;
+    margin-top: 150px;
+  }
+}
+
+@include breakpoint(small) {
+  #main-header {
+    height: 640px;
+    &:before {
+      content: "";
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      background: linear-gradient(0deg, rgba(33, 33, 33, 0.67), $black);
+      height: 56px;
+      z-index: 2;
+    }
+  }
+  #main-header .h1 {
+    top: 13%;
+    margin: 0;
+  }
+  #main-header .h2 {
+    font-size: 1.2em;
+    top: 13%;
+  }
+  #main-header #header-boxflex {
+    position: relative;
+    flex-wrap: wrap;
+    top: 45%;
+    transform: translateY(-45%);
+    margin: 0;
+  }
+  #open-developer {
+    margin-bottom: 30px;
+  }
+  #main-header .boxstyle-container {
+    width: 340px;
+    height: 120px;
+  }
 }

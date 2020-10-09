@@ -4,358 +4,429 @@ Business
 ----------------------------------------------------------------------
 */
 
-#cloudyne-section{
-	h2, h3{
-		position: relative;
+#cloudyne-section {
+  h2,
+  h3 {
+    position: relative;
     text-align: center;
-	}
-	>p{
-		text-align: center;
-		position: relative;
-		margin-top: 20px;
-	}
-	h3{
-		margin-top: 20px;
-	}
-	#project-timeline-container{
-		position: relative;
+  }
+  > p {
+    text-align: center;
+    position: relative;
     margin-top: 20px;
-	}
-	#project-timeline{
-		position: relative;
+  }
+  h3 {
+    margin-top: 20px;
+  }
+  #project-timeline-container {
+    position: relative;
+    margin-top: 20px;
+  }
+  #project-timeline {
+    position: relative;
     left: 50%;
     margin-left: -14px;
-		top: 21%;
-		>.diamond{
-			transform: rotateZ(90deg);
-			width: 20px;
-			height: 20px;
-			top: 3px;
-			left: 3px;
-			background: white;
-		}
-		.diamond{
-			>div:not(.border-box){
-				position: relative;
-    		width: 110px;
-    		height: 1px;
-    		background: white;
-    		transform: rotate(45deg);
-    		bottom: -57px;
-    		right: -3px;
-			}
-			&:nth-child(7){
-				top: 60px;
-				left: 60px;
-			}
-			&:nth-child(8){
-				top: 140px;
-				left: 140px;
-				>div:not(.border-box){
-					bottom: 40px;
-					right: 95px;
-				}
-			}
-			&:nth-child(9){
-				top: 220px;
-				left: 220px;
-				>div:not(.border-box){
-					width: 310px;
-					bottom: -127px;
-					right: 27px;
-				}
-			}
-			&:nth-child(10){
-				top: 300px;
-				left: 300px;
-				>div:not(.border-box){
-					width: 310px;
-					bottom: 110px;
-					right: 264px;
-				}
-			}
-			&:nth-child(11){
-				top: 380px;
-				left: 380px;
-				>div:not(.border-box){
-					width: 1px;
-					height: 50px;
-					bottom: 43px;
-					right: -35px;
-				}
-			}
-		}
-		.cloudyne-longline{
-			position: relative;
-			width: 520px;
-			height: 1px;
-			background: white;
-			transform: rotate(45deg);
-			bottom: -209px;
-			right: 50px;
-		}
-		.cloudyne-mediumline{
-			position: relative;
-    	width: 30px;
-    	height: 1px;
-    	background: white;
-    	transform: rotate(45deg);
-    	bottom: -35px;
-			right: -18px;
-			&:nth-child(4) {
-				width: 29px;
-				bottom: -30px;
-				right: -23px;
-			}
-		}
-		
-		.cloudyne-shortline{
-			position: relative;
-			width: 19px;
-			height: 1px;
-			background: white;
-			transform: rotate(45deg);
-			bottom: -20px;
-			right: -23px;
-			&:nth-child(6){
-    		bottom: -29px;
-    		right: -16px;
-			}
-		}
-	}
-	.border-box{
-		position: relative;
-		background-color: transparent;
-		width: 300px;
-		height: 200px;
-		perspective: 1000px; /* Remove this if you don't want the 3D effect */
-		&:hover{
-			.project-container{
-				transform: rotateY(180deg);
-			}
-		}
-		.project-container{
-			position: relative;
-			width: 100%;
-			height: 100%;
-			text-align: center;
-			transition: transform 0.8s;
-			transform-style: preserve-3d;
-			border: 1px solid $custom-dGray;
-		}
-		.project-front, .project-back{
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			-webkit-backface-visibility: hidden; /* Safari */
-			backface-visibility: hidden;
-		}
-		.project-front{
-			background-color: $custom-dGray;
-			color: $white;
-			background-size: cover;
-			background-repeat: no-repeat;
-			.h4{
-				margin: 20px 0 10px;
-				color: $white;
-			}
-			p, div{
-				position: relative;
-				text-shadow: 1px 0px 2px $custom-dGray;
-			}
-		}
-		.project-back{
-			background-color: $custom-dGray;
-			color: $custom-white;
-			transform: rotateY(180deg);
-			box-shadow: inset 0px 0px 0px 5px rgba(0, 0, 0, 0.87);
-			a{
-				display: block;
-				margin: 10px 0;
-				cursor: pointer;
-			}
-		}
-		#project-box-style{
-    	width: 100%;
-			height: 30px;
-			.boxstyle-lineleft, .boxstyle-lineright{
-				position: absolute;
-				left: 134px;
-				top: 13px;
-				width: 8px;
-				-webkit-transform: rotate(-90deg);
-				transform: rotate(-270deg);
-				.boxstyle-lineshort{
-					position: absolute;
-    			width: 1px;
-    			height: 25px;
-					background: $custom-white;
-					&:last-of-type{
-						left: 6px;
-					}
-				}
-				.boxstyle-linelong{
-					position: absolute;
-					width: 1px;
-					height: 55px;
-					background: $custom-white;
-					left: 3px;
-					top: 2px;
-				}
-			}
-			.boxstyle-lineright{
-				left: 186px;
-				.boxstyle-linelong{
-					top: -31px;
-				}
-			}
-			.boxstyle-diamond{
-				position: absolute;
-				left: 50%;
-				top: 10px;
-				width: 15px;
-				height: 15px;
-				background: $custom-white;
-				border: 1px solid $custom-white;
-				-webkit-box-shadow: inset 0px 0px 0px 3px $custom-dGray;
-				box-shadow: inset 0px 0px 0px 2px $custom-dGray;
-				-webkit-transform: rotateZ(45deg);
-				transform: rotateZ(45deg) translateX(-50%);
-			}
-		}
-	}
-	#project1{
+    top: 21%;
+    > .diamond {
+      transform: rotateZ(90deg);
+      width: 20px;
+      height: 20px;
+      top: 3px;
+      left: 3px;
+      background: white;
+    }
+    .diamond {
+      > div:not(.border-box) {
+        position: relative;
+        width: 110px;
+        height: 1px;
+        background: white;
+        transform: rotate(45deg);
+        bottom: -57px;
+        right: -3px;
+      }
+      &:nth-child(7) {
+        top: 60px;
+        left: 60px;
+      }
+      &:nth-child(8) {
+        top: 140px;
+        left: 140px;
+        > div:not(.border-box) {
+          bottom: 40px;
+          right: 95px;
+        }
+      }
+      &:nth-child(9) {
+        top: 220px;
+        left: 220px;
+        > div:not(.border-box) {
+          width: 310px;
+          bottom: -127px;
+          right: 27px;
+        }
+      }
+      &:nth-child(10) {
+        top: 300px;
+        left: 300px;
+        > div:not(.border-box) {
+          width: 310px;
+          bottom: 110px;
+          right: 264px;
+        }
+      }
+      &:nth-child(11) {
+        top: 380px;
+        left: 380px;
+        > div:not(.border-box) {
+          width: 1px;
+          height: 50px;
+          bottom: 43px;
+          right: -35px;
+        }
+      }
+    }
+    .cloudyne-longline {
+      position: relative;
+      width: 520px;
+      height: 1px;
+      background: white;
+      transform: rotate(45deg);
+      bottom: -209px;
+      right: 50px;
+    }
+    .cloudyne-mediumline {
+      position: relative;
+      width: 30px;
+      height: 1px;
+      background: white;
+      transform: rotate(45deg);
+      bottom: -35px;
+      right: -18px;
+      &:nth-child(4) {
+        width: 29px;
+        bottom: -30px;
+        right: -23px;
+      }
+    }
+
+    .cloudyne-shortline {
+      position: relative;
+      width: 19px;
+      height: 1px;
+      background: white;
+      transform: rotate(45deg);
+      bottom: -20px;
+      right: -23px;
+      &:nth-child(6) {
+        bottom: -29px;
+        right: -16px;
+      }
+    }
+  }
+  .border-box {
+    position: relative;
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    &:hover {
+      .project-container {
+        transform: rotateY(180deg);
+      }
+    }
+    .project-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      border: 1px solid $custom-dGray;
+    }
+    .project-front,
+    .project-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+    .project-front {
+      background-color: $custom-dGray;
+      color: $white;
+      background-size: cover;
+      background-repeat: no-repeat;
+      .h4 {
+        margin: 20px 0 10px;
+        color: $white;
+      }
+      p,
+      div {
+        position: relative;
+        text-shadow: 1px 0px 2px $custom-dGray;
+      }
+    }
+    .project-back {
+      background-color: $custom-dGray;
+      color: $custom-white;
+      transform: rotateY(180deg);
+      box-shadow: inset 0px 0px 0px 5px rgba(0, 0, 0, 0.87);
+      a {
+        display: block;
+        margin: 10px 0;
+        cursor: pointer;
+      }
+    }
+    #project-box-style {
+      width: 100%;
+      height: 30px;
+      .boxstyle-lineleft,
+      .boxstyle-lineright {
+        position: absolute;
+        left: 134px;
+        top: 13px;
+        width: 8px;
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-270deg);
+        .boxstyle-lineshort {
+          position: absolute;
+          width: 1px;
+          height: 25px;
+          background: $custom-white;
+          &:last-of-type {
+            left: 6px;
+          }
+        }
+        .boxstyle-linelong {
+          position: absolute;
+          width: 1px;
+          height: 55px;
+          background: $custom-white;
+          left: 3px;
+          top: 2px;
+        }
+      }
+      .boxstyle-lineright {
+        left: 186px;
+        .boxstyle-linelong {
+          top: -31px;
+        }
+      }
+      .boxstyle-diamond {
+        position: absolute;
+        left: 50%;
+        top: 10px;
+        width: 15px;
+        height: 15px;
+        background: $custom-white;
+        border: 1px solid $custom-white;
+        -webkit-box-shadow: inset 0px 0px 0px 3px $custom-dGray;
+        box-shadow: inset 0px 0px 0px 2px $custom-dGray;
+        -webkit-transform: rotateZ(45deg);
+        transform: rotateZ(45deg) translateX(-50%);
+      }
+    }
+  }
+  #project1 {
     transform: rotateZ(225deg);
-		top: 100px;
-		left: 46px;
-		.project-front{
-			background-image: url('./assets/images/cloudyne-background.jpg');
-			&:before{
-				content: '';
-				background: rgba(0, 0, 0, 0.60);
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-			}
-		}
-	}
-	#project2{
+    top: 100px;
+    left: 46px;
+    .project-front {
+      background-image: url("./assets/images/cloudyne-background.jpg");
+      &:before {
+        content: "";
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+  #project2 {
     transform: rotateZ(225deg);
-		top: -280px;
+    top: -280px;
     right: 336px;
-		.project-front{
-			background-image: url('./assets/images/shea-me_background.jpg');
-			&:before{
-				content: '';
-				background: rgba(0, 0, 0, 0.60);
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-			}
-		}
-	}
-	#project3{
+    .project-front {
+      background-image: url("./assets/images/shea-me_background.jpg");
+      &:before {
+        content: "";
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+  #project3 {
     transform: rotateZ(225deg);
-		top: 230px;
+    top: 230px;
     left: 186px;
-		.project-front{
-			background-image: url('./assets/images/sherwood_background.jpg');
-			&:before{
-				content: '';
-				background: rgba(0, 0, 0, 0.60);
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-			}
-		}
-	}
-	#project4{
+    .project-front {
+      background-image: url("./assets/images/sherwood_background.jpg");
+      &:before {
+        content: "";
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+  #project4 {
     transform: rotateZ(225deg);
-		top: -420px;
+    top: -420px;
     right: 466px;
-		.project-front{
-			background-image: url('./assets/images/pout_background.jpeg');
-			&:before{
-				content: '';
-				background: rgba(0, 0, 0, 0.60);
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-			}
-		}
-	}
-	#project5{
-		transform: rotateZ(225deg);
-		top: -240px;
+    .project-front {
+      background-image: url("./assets/images/pout_background.jpeg");
+      &:before {
+        content: "";
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+  #project5 {
+    transform: rotateZ(225deg);
+    top: -240px;
     right: 36px;
-		.project-front{
-			background-image: url('./assets/images/medway_background.jpg');
-			&:before{
-				content: '';
-				background: rgba(0, 0, 0, 0.60);
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-			}
-		}
-	}
-	.boxstyle-container{
-		width: 290px;
+    .project-front {
+      background-image: url("./assets/images/medway_background.jpg");
+      &:before {
+        content: "";
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+  .boxstyle-container {
+    width: 290px;
     height: 70px;
-		span{
-			display: none;
-		}
-		.boxstyle-lineshort{
-			height: 12px;
-		}
-		.boxstyle-linelong{
-			height: 19px;
-		}
-	}
-	.tabs{
-		position: relative;
+    span {
+      display: none;
+    }
+    .boxstyle-lineshort {
+      height: 12px;
+    }
+    .boxstyle-linelong {
+      height: 19px;
+    }
+  }
+  .tabs {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     top: 20px;
     width: 100%;
     background: transparent;
-		border: none;
-	}
-	.tabs-content{
-		position: relative;
-		margin: 0px auto;
+    border: none;
+  }
+  .tabs-content {
+    position: relative;
+    margin: 0px auto;
     top: 40px;
     width: 80%;
     background: transparent;
-		border: none;
-		text-align: center;
-	}
-	.tabs-title{
-		position: relative;
-		margin: 1%;
-		&.is-active{
-			.boxstyle-container{
-				box-shadow: inset 0px 0px 0px 5px #C8CDD0;
-			}
-		}
-	}
-	.tabs-title > a:focus, .tabs-title > a[aria-selected='true'], 	.tabs-title > a:hover{
-		background: none;
-		color: $primary-color;
-	}
-	#role-container{
-		position: relative;
+    border: none;
+    text-align: center;
+  }
+  .tabs-title {
+    position: relative;
+    margin: 1%;
+    &.is-active {
+      .boxstyle-container {
+        box-shadow: inset 0px 0px 0px 5px #c8cdd0;
+      }
+    }
+  }
+  .tabs-title > a:focus,
+  .tabs-title > a[aria-selected="true"],
+  .tabs-title > a:hover {
+    background: none;
+    color: $primary-color;
+  }
+  #role-container {
+    position: relative;
     bottom: -49%;
-	}
+  }
+}
+@include breakpoint(small) {
+  #cloudyne-section {
+    height: auto;
+    margin-bottom: 100px;
+  }
+  #cloudyne-section #project-timeline {
+    left: 0%;
+    margin-left: 0px;
+    transform: rotateZ(0deg);
+    border: none;
+    height: auto;
+    box-shadow: none;
+    width: auto;
+  }
+  #cloudyne-section #project-timeline .diamond {
+    position: relative;
+    width: auto;
+    height: auto;
+    border: none;
+    box-shadow: none;
+    transform: rotateZ(0deg);
+    left: 0px;
+    margin: 20px 0;
+    background: transparent;
+  }
+  #cloudyne-section #project1,
+  #cloudyne-section #project2,
+  #cloudyne-section #project3,
+  #cloudyne-section #project4,
+  #cloudyne-section #project5 {
+    top: 0;
+    left: 0;
+    transform: rotateZ(0deg);
+    margin: 0 auto;
+  }
+  #cloudyne-section #project-timeline .cloudyne-longline,
+  #cloudyne-section #project-timeline .cloudyne-mediumline,
+  #cloudyne-section #project-timeline .cloudyne-shortline {
+    display: none;
+  }
+  #cloudyne-section #project-timeline .diamond > div:not(.border-box) {
+    display: none;
+  }
+  #cloudyne-section #project-timeline .diamond:nth-child(7),
+  #cloudyne-section #project-timeline .diamond:nth-child(8),
+  #cloudyne-section #project-timeline .diamond:nth-child(9),
+  #cloudyne-section #project-timeline .diamond:nth-child(10),
+  #cloudyne-section #project-timeline .diamond:nth-child(11) {
+    top: 0;
+    left: 0;
+  }
+  #cloudyne-section #role-container {
+    bottom: 0;
+  }
+  #cloudyne-section .tabs-content {
+    width: 100%;
+  }
+  #cloudyne-section .boxstyle-container {
+    width: 170px;
+  }
+  #cloudyne-section .boxstyle-container .boxstyle-right,
+  #cloudyne-section .boxstyle-container .boxstyle-left {
+    display: none;
+  }
 }

@@ -3,8 +3,8 @@
 Contact
 ----------------------------------------------------------------------
 */
-#contact-section{
-  #contact-wrapper{
+#contact-section {
+  #contact-wrapper {
     position: relative;
     display: flex;
     max-width: 900px;
@@ -13,31 +13,31 @@ Contact
     padding-top: 30px;
     margin: auto;
   }
-  #contact-photo{
+  #contact-photo {
     margin-right: 15px;
   }
-  #photo-me{
-		width: 250px;
+  #photo-me {
+    width: 250px;
     height: 250px;
   }
-  .h2{
+  .h2 {
     position: relative;
     text-align: center;
   }
-  #contact-content{
+  #contact-content {
     width: 100%;
     margin-top: 15px;
   }
-  .wpcf7-form-control-wrap{
+  .wpcf7-form-control-wrap {
     position: static;
   }
-  .wpcf7{
-    p{
-			position: relative;
-			width: 100%;
+  .wpcf7 {
+    p {
+      position: relative;
+      width: 100%;
       margin-right: 40px;
     }
-    label{
+    label {
       margin: 0;
       color: $black;
       font-weight: 600;
@@ -45,50 +45,55 @@ Contact
       background: $white;
       padding: 0px 7px;
       font-size: 16px;
-
     }
-    br{
+    br {
       display: none;
     }
-    input:not(.wpcf7-submit), textarea{
+    input:not(.wpcf7-submit),
+    textarea {
       border-radius: 0;
       color: $primary-color;
       border: none;
       background: transparent;
       margin-bottom: 1.1rem;
-      &:focus, &:active{
+      &:focus,
+      &:active {
         box-shadow: none;
       }
     }
-    form{
-      p{
-        &:nth-of-type(5){
+    form {
+      p {
+        &:nth-of-type(5) {
           margin: 0 auto;
         }
       }
     }
-    span[role=alert]{
+    span[role="alert"] {
       position: absolute;
       width: 100%;
       color: $white;
       font-weight: 600;
       text-transform: uppercase;
-      background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, #c02e3a 45%);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 0%,
+        #c02e3a 45%
+      );
       top: 20px;
       right: 0;
       text-align: end;
       padding: 0px 5px 0px 0px;
       font-size: 0.6em;
     }
-    .your-email{
-      span[role=alert]{
+    .your-email {
+      span[role="alert"] {
         padding-left: 0;
       }
     }
-    .ajax-loader{
+    .ajax-loader {
       display: none;
     }
-    .wpcf7-submit{
+    .wpcf7-submit {
       position: relative;
       display: block;
       background: transparent;
@@ -99,7 +104,7 @@ Contact
       padding: 10px;
       cursor: pointer;
       text-transform: uppercase;
-      &:hover{
+      &:hover {
         color: $secondary-color;
         box-shadow: inset 0px 0px 10px 0px $secondary-color;
       }
@@ -113,5 +118,15 @@ Contact
       color: $primary-color;
       text-shadow: 0px 0px 15px $primary-color;
     }
+  }
+}
+
+@include breakpoint(small) {
+  #contact-section #photo-me {
+    width: 150px;
+    height: 150px;
+  }
+  #contact-section #contact-photo {
+    margin: 0 auto;
   }
 }

@@ -1,4 +1,4 @@
-# Copyright (C) 2019 Cosmic
+# Copyright (C) 2020 Cosmic
 # This file is distributed under the same license as the Cosmic package.
 msgid ""
 msgstr ""
