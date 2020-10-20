@@ -67,5 +67,22 @@ jQuery(document).ready(function ($) {
   $(".close-button").click(function () {
     $("#home").css("overflow", "visible");
     $("#page-overlay").css("visibility", "visible");
-  });
+	});
+	
+	$("#primary-nav li .diamond")
+		.mouseover(function () {
+			$(this).css(
+				'background-color', 'white'
+			);
+			$(this).parent().css(
+				'opacity', 1
+			);
+  }).mouseleave(function () {
+		$(this).css(
+				'background-color', 'transparent'
+			);
+			$(this).parent().css(
+				'opacity', 0
+			);
+	});
 });

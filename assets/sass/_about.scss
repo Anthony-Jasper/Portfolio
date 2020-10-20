@@ -4,21 +4,25 @@ About Me
 ----------------------------------------------------------------------
 */
 #about-section {
+  height: auto;
+  margin-bottom: 100px;
   .h2 {
     position: relative;
     text-align: center;
   }
   .boxstyle-container {
-    width: 340px;
     height: 110px;
     z-index: 201;
+    p {
+      font-size: 10px;
+    }
   }
   .tabs {
     position: relative;
     margin-top: 30px;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 100%;
     background: transparent;
     border: none;
@@ -36,9 +40,10 @@ About Me
   }
   .tabs-title {
     position: relative;
-    &:nth-of-type(2) {
-      margin: 0 5%;
-    }
+    float: none;
+    flex: 1 1 150px;
+    max-width: 360px;
+    margin: 5px;
     &.is-active {
       .boxstyle-container {
         box-shadow: inset 0px 0px 0px 5px #c8cdd0;
@@ -98,11 +103,9 @@ About Me
   #about-interests1,
   #about-interests2,
   #about-interests3,
-  #about-interests4,
-  #about-interests5,
-  #about-interests6,
-  #about-interests7 {
-    flex: 1 1 25%;
+  #about-interests4 {
+    flex: 1 1 50%;
+    margin: 10px 0;
   }
   #about-interests5,
   #about-interests6,
@@ -122,33 +125,36 @@ About Me
     }
   }
 }
-
-@include breakpoint(small) {
+@include breakpoint(medium) {
   #about-section {
-    height: auto;
-    margin-bottom: 100px;
+    .tabs-title {
+      flex-basis: 200px;
+    }
+    #about-interests1,
+    #about-interests2,
+    #about-interests3,
+    #about-interests4 {
+      flex: 1 1 25%;
+    }
   }
-  #about-section .tabs {
-    flex-wrap: wrap;
-    justify-content: center;
+}
+@include breakpoint(large) {
+  #about-section {
+    padding: 0 100px;
   }
-  #about-section .tabs-title:nth-of-type(2) {
-    margin-left: 20px;
-    margin-bottom: 20px;
-  }
-  #about-section .boxstyle-container {
-    width: 150px;
-  }
-  .boxstyle-container p {
-    font-size: 10px;
-  }
-  #about-section .tabs-title:nth-of-type(3) .boxstyle-container {
-    width: 250px;
-  }
-  #about-section .boxstyle-left {
-    display: none;
-  }
-  #about-section .boxstyle-right {
-    display: none;
+}
+
+@include breakpoint(xlarge) {
+  #about-section {
+    .tabs {
+      justify-content: space-between;
+    }
+    .is-active#about-skills {
+      flex-wrap: nowrap;
+    }
+    #about-skills1 ul,
+    #about-skills2 ul {
+      width: 100%;
+    }
   }
 }

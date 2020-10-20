@@ -164,7 +164,36 @@
           </div>
           <a class="prev-website" href="https://projects.cloudyne.co.uk/medwayveganfestival" target="_blank">Under Development</a>
         </div>
-      </div>
+			</div>
+			<div class="dp-cell">
+				<img src="<?php bloginfo('template_url'); ?>/assets/images/medway_background.jpg" />
+				<div class="dp-cell-content">
+					<p class="hfont h5">Helene Simpson Photography</p>
+					<div>
+						<p class="hfont h6">Description</p>
+						<p>A self-employed newborn photographer, offering newborn, maternity and cake smash sessions in Eastbourne.</p>
+					</div>
+					<div>
+						<p class="hfont h6">Features</p>
+						<ul>
+							<li>Responsive</li>
+							<li>Image Sliders</li>
+							<li>Contact Form</li>
+						</ul>
+					</div>
+					<div>
+						<p class="hfont h6">Extras</p>
+						<ul>
+							<li>Timeframe:<span>1 Months</span></li>
+							<li>Framework:<span>Foundation</span></li>
+							<li>CMS:<span>WordPress</span></li>
+							<li>On-Going Updates:<span>No</span></li>
+						</ul>
+					</div>
+					<a class="prev-website" href="https://projects.cloudyne.co.uk/medwayveganfestival" target="_blank">Under
+						Development</a>
+				</div>
+			</div>
     </div>
 		<div class="beams">
 			<hr>
@@ -246,7 +275,7 @@
 						<li class="orbit-slide">
 							<figure class="orbit-figure">
 							<img class="orbit-image" src="<?php bloginfo('template_url'); ?>/assets/images/art_template/shop.png" /> 
-								<figcaption class="orbit-caption">Shop Page</figcaption>
+								<figcaption class="orbit-caption">Forum Page</figcaption>
 							</figure>
 						</li>
 						<li class="orbit-slide">

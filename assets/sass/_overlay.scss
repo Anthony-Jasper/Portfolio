@@ -5,15 +5,16 @@
   right: 0;
   bottom: 0;
   padding: 40px 25px;
+  padding: 10px 5px;
   z-index: 200;
   pointer-events: none;
   #page-topbar {
     position: absolute;
     display: flex;
     flex-wrap: nowrap;
-    top: 40px;
-    left: 25px;
-    right: 25px;
+    top: 0px;
+    left: 10px;
+    right: 10px;
     height: 80px;
     align-items: center;
     justify-content: center;
@@ -23,7 +24,8 @@
       position: relative;
       width: 170px;
       text-transform: uppercase;
-      padding: 5px 10px;
+      font-size: 12px;
+      padding: 5px 5px;
       border: 1px solid $custom-dGray;
       border-left: none;
       text-align: center;
@@ -36,10 +38,17 @@
   }
   #primary-nav2 {
     position: absolute;
-    left: -190px;
-    width: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 360px;
+    top: 50px;
     opacity: 0;
     display: none;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
     li {
       display: inline-block;
       text-transform: uppercase;
@@ -58,20 +67,22 @@
   }
   #linkedin img,
   #github img {
-    width: 26px;
+    width: 22px;
   }
   #page-bottombar {
     position: absolute;
     display: flex;
     flex-wrap: nowrap;
-    bottom: 40px;
-    left: 25px;
-    right: 25px;
+
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
     align-items: center;
     justify-content: center;
     pointer-events: all;
     #page-bottomleft,
     #page-bottomright {
+      font-size: 12px;
       position: relative;
       width: 170px;
       text-transform: uppercase;
@@ -102,8 +113,9 @@
   #page-next {
     position: relative;
     margin: 0 15px;
-    width: 53px;
-    height: 50px;
+
+    height: 35px;
+    width: 32px;
     border: 1px solid $custom-dGray;
     border-right: none;
     border-left: none;
@@ -112,17 +124,19 @@
       position: relative;
       left: -1px;
       top: -3px;
-      font-size: 54px;
+
+      font-size: 35px;
     }
   }
   .hamburger-menu {
     position: relative;
     margin: 0 35px;
     width: 33px;
-    height: 33px;
+    height: 27px;
+
     .hamburger-line {
       width: 32px;
-      height: 4px;
+      height: 2px;
       margin: 5px auto;
       background-color: $custom-white;
       display: block;
@@ -138,7 +152,9 @@
     position: absolute;
     right: 80px;
     width: max-content;
-    top: 35%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
     pointer-events: all;
     ul {
       text-align: right;
@@ -149,83 +165,59 @@
         color: $custom-white;
         text-transform: uppercase;
         letter-spacing: 2px;
+        cursor: default;
       }
       .diamond {
         position: relative;
         right: -140px;
         left: auto;
         top: -28px;
-      }
-      &:hover {
-        &:nth-of-type(n) {
-          a {
-            opacity: 1;
-          }
-          .diamond {
-            background: $custom-white;
-          }
-        }
+        cursor: pointer;
       }
     }
   }
 }
-
-@include breakpoint(small) {
-  #page-overlay {
-    padding: 10px 5px;
-  }
-  #page-overlay #page-topbar #page-topleft,
-  #page-overlay #page-topbar #page-topright {
-    padding: 5px 5px;
-  }
-  #page-overlay #page-topbar #page-topleft,
-  #page-overlay #page-bottombar #page-bottomleft,
-  #page-overlay #page-bottombar #page-bottomright {
-    font-size: 12px;
-  }
-  #page-overlay .hamburger-menu .hamburger-line {
-    height: 2px;
-  }
-  #page-overlay #page-topbar {
-    top: 0px;
-    left: 10px;
-    right: 10px;
-  }
-  #page-overlay #page-bottombar {
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-  }
-  #page-overlay #linkedin img,
-  #page-overlay #github img {
-    width: 22px;
-  }
-  #page-overlay .hamburger-menu {
-    height: 27px;
-  }
-  #page-overlay #primary-nav {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  #page-overlay #page-next {
-    height: 35px;
-    width: 32px;
-  }
-  #page-overlay #page-next i {
-    font-size: 35px;
-  }
-  #page-overlay #primary-nav {
-    display: none;
-  }
+@include breakpoint(medium) {
   #page-overlay #primary-nav2 {
-    left: 50%;
-    transform: translateX(-50%);
-    width: 360px;
-    top: 50px;
+    width: 450px;
   }
-  #page-overlay #primary-nav2 ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+}
+@include breakpoint(large) {
+  #page-overlay {
+    padding: 40px 25px;
+    #page-topbar {
+      top: 40px;
+      left: 25px;
+      right: 25px;
+      #page-topleft,
+      #page-topright {
+        padding: 5px 10px;
+      }
+    }
+    .hamburger-menu {
+      height: 33px;
+      .hamburger-line {
+        height: 4px;
+      }
+    }
+    #page-bottombar {
+      bottom: 40px;
+      left: 25px;
+      right: 25px;
+    }
+    #linkedin img,
+    #github img {
+      width: 26px;
+    }
+    #primary-nav {
+      display: block;
+    }
+    #page-next {
+      width: 53px;
+      height: 50px;
+      i {
+        font-size: 54px;
+      }
+    }
   }
 }

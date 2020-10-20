@@ -1,32 +1,34 @@
-.off-canvas-wrapper{
+.off-canvas-wrapper {
   overflow: visible;
 }
-.position-left{
+.position-left {
   overflow-x: hidden;
 }
-.off-canvas .close-button{
-	position: relative;
+.off-canvas .close-button {
+  position: relative;
   color: #b8860b;
   margin: 8px 0 15px 0;
-	padding: 0.85em 1em;
-	z-index: 5;
-	cursor: pointer;
-	font-size: 12px;
-	text-transform: uppercase;
-	left: 50%;
-	transform: translateX(-50%);
+  padding: 0.85em 1em;
+  z-index: 5;
+  cursor: pointer;
+  font-size: 12px;
+  text-transform: uppercase;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.js-off-canvas-overlay, .off-canvas{
+.js-off-canvas-overlay,
+.off-canvas {
   background: transparent;
 }
-#triangle-topleft, #triangle-topright {
+#triangle-topleft,
+#triangle-topright {
   position: absolute;
   display: inline-block;
   width: 0;
   height: 0;
-  border-top: 5em solid lighten( $black, 20% );
+  border-top: 5em solid lighten($black, 20%);
 }
-#triangle-topleft{
+#triangle-topleft {
   border-right: 70vw solid transparent;
   left: 0;
 }
@@ -34,126 +36,163 @@
   border-left: 70vw solid transparent;
   right: 0;
 }
-.off-canvas .h1{
+.off-canvas .h1 {
   margin-top: 100px;
   text-align: center;
   letter-spacing: 7px;
 }
-.off-canvas .h6, .off-canvas .h5{
+.off-canvas .h6,
+.off-canvas .h5 {
   text-align: center;
   letter-spacing: 2px;
 }
-#rec-github{
+#rec-github {
   position: relative;
   text-align: center;
 }
-#developer-projects{
-  margin: 0 .5em;
-  .dp-cell{
+#developer-projects {
+  margin: 0 0.5em;
+  .dp-cell {
     display: flex;
     flex-wrap: wrap;
     flex: 1 1 50%;
     margin: 25px 0;
-    &:nth-child(even){
+    &:nth-child(even) {
       flex-direction: row-reverse;
     }
-    img{
+    img {
       padding: 5px;
       object-fit: cover;
       border: 1px solid $white;
     }
-    .dp-cell-content{
+    .dp-cell-content {
       width: 100%;
       padding: 5px 5px 5px 5px;
-      .h5{
+      .h5 {
         border-bottom: 1px solid $white;
         width: inherit;
         margin: 0 auto 20px;
       }
-      .h6{
+      .h6 {
         text-align: left;
       }
-      p, li{
+      p,
+      li {
         color: $custom-white;
       }
-      a{
+      a {
         position: relative;
         display: block;
         text-align: center;
         margin-top: 15px;
       }
-      ul{
+      ul {
         list-style-type: disc;
         padding-left: 30px;
       }
     }
-	}
-	
+  }
 }
-#underdevelopment{
-	text-align: center;
-	margin-bottom: 30px;
+#underdevelopment {
+  margin-bottom: 30px;
+  padding: 0 10px;
+  ul {
+    margin: auto;
+    list-style-type: inherit;
+  }
 }
-#designer-projects{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	.beams, .h5{
-		width: 100%;
-	}
-	.orbit-bullets{
-		display: none;
-	}
-	.orbit-previous{
-		left: -46px;
-		cursor: pointer;
-	}
-	.orbit-next{
-		right: -46px;
-		cursor: pointer;
-	}
-	.orbit-previous:hover, .orbit-next:hover, .orbit-previous:active, .orbit-next:active, .orbit-previous:focus, .orbit-next:focus{
-		background: $primary-color;
-	}
+#designer-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .beams,
+  .h5 {
+    width: 100%;
+  }
+  .orbit-bullets {
+    display: none;
+  }
+  .orbit-previous {
+    left: -46px;
+    cursor: pointer;
+  }
+  .orbit-next {
+    right: -46px;
+    cursor: pointer;
+  }
+  .orbit-previous:hover,
+  .orbit-next:hover,
+  .orbit-previous:active,
+  .orbit-next:active,
+  .orbit-previous:focus,
+  .orbit-next:focus {
+    background: $primary-color;
+  }
 }
-.orbit{
-	width: 70%;
-	.orbit-caption{
-		text-align: center;
-	}
-	.orbit-image{
-		object-fit: cover;
-	}
+.orbit {
+  width: 70%;
+  .orbit-caption {
+    text-align: center;
+  }
+  .orbit-image {
+    object-fit: cover;
+  }
 }
-.orbit-container{
-	height: 400px;
+.orbit-container {
+  height: 400px;
 }
-@include breakpoint(large)
-{
-  #triangle-topleft, #triangle-topright{
+@include breakpoint(large) {
+  #triangle-topleft,
+  #triangle-topright {
     border-top-width: 150px;
   }
-  hr{
+  hr {
     max-width: inherit;
   }
-  #developer-projects, #designer-projects, .beams{
+  #developer-projects,
+  #designer-projects,
+  .beams {
     margin: 0 1.5em;
   }
-  #developer-projects .dp-cell{
+  #developer-projects .dp-cell {
     flex-wrap: nowrap;
   }
-  #developer-projects .dp-cell img{
+  #developer-projects .dp-cell img {
     width: 50%;
   }
-  #developer-projects .dp-cell .dp-cell-content{
+  #developer-projects .dp-cell .dp-cell-content {
     width: 50%;
     padding: 5px 5px 5px 25px;
   }
 }
-@include breakpoint(xlarge)
-{
-  #developer-projects .dp-cell .dp-cell-content a{
+@include breakpoint(xlarge) {
+  #developer-projects .dp-cell .dp-cell-content a {
     margin-top: 0px;
   }
 }
-
+@include breakpoint(small) {
+  .position-left {
+    width: 100vw;
+  }
+  #designer-projects .orbit-previous {
+    left: -7px;
+  }
+  #designer-projects .orbit-next {
+    right: -8px;
+  }
+  .orbit-previous,
+  .orbit-next {
+    top: 90%;
+  }
+  .orbit {
+    width: 95%;
+    height: 250px;
+  }
+  .orbit-wrapper,
+  .orbit-container {
+    height: inherit;
+  }
+  .orbit .orbit-image {
+    height: 250px;
+  }
+}

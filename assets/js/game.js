@@ -1,20 +1,3 @@
-/*********************************************************************/
-console.log('To view what needs to be done or fixed for the game type todo(); or issues();');
-
-function todo() {
-  console.log('HUD');
-  console.log('Weapons Stats (Dmg - Speed)(Need to do Better Weapon Design First)');
-  console.log('UI - Confirmations / Currently Active');
-  console.log('Turn Score Threshold into Timer');
-  console.log('Spawning Speeds for Enemies');
-  console.log('Movement Increase per Level for Enemies');
-  console.log('Enemies that shoot projectiles?');
-}
-
-function issues() {
-  console.log('Framerate Drops When Splicing Enemies and Projectiles');
-  console.log('Menu Items - Looping(Includes Ship Purchasing)');
-}
 /*-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=
                VARIABLES
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
