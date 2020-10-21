@@ -4,6 +4,7 @@ Contact
 ----------------------------------------------------------------------
 */
 #contact-section {
+  padding: 0 15px;
   #contact-wrapper {
     position: relative;
     display: flex;
@@ -14,11 +15,11 @@ Contact
     margin: auto;
   }
   #contact-photo {
-    margin-right: 15px;
+    margin: 0 auto;
   }
   #photo-me {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
   }
   .h2 {
     position: relative;
@@ -35,7 +36,8 @@ Contact
     p {
       position: relative;
       width: 100%;
-      margin-right: 40px;
+      max-width: 580px;
+      margin: 0 auto;
     }
     label {
       margin: 0;
@@ -121,12 +123,8 @@ Contact
   }
 }
 
-@include breakpoint(small) {
-  #contact-section #photo-me {
-    width: 150px;
-    height: 150px;
-  }
-  #contact-section #contact-photo {
-    margin: 0 auto;
+@include breakpoint(large) {
+  #contact-section #contact-wrapper {
+    padding: 30px 100px 0px;
   }
 }

@@ -73,7 +73,7 @@ var myGameArea = {
     this.canvas.width = 1600;
     this.canvas.height = 700;
     this.context = this.canvas.getContext("2d");
-    document.getElementById('game-section').insertBefore(this.canvas, document.getElementById('game-section').childNodes[4]);
+    document.getElementById('game-section').insertBefore(this.canvas, document.getElementById('game-section').childNodes[6]);
     this.interval = setInterval(updateMenuArea, 150);
     window.addEventListener('keydown', function (e) {
       myGameArea.key = e.keyCode;

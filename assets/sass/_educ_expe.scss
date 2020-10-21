@@ -4,6 +4,9 @@ Experience - Saturn
 ----------------------------------------------------------------------
 */
 #experience-section {
+  height: auto;
+  margin-bottom: 100px;
+  padding: 0 15px;
   h2 {
     position: relative;
     text-align: center;
@@ -13,15 +16,18 @@ Experience - Saturn
     margin-top: 30px;
   }
   .h3 {
-    font-size: 1.2em;
     text-align: center;
   }
   #education-flex {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: start;
     margin-top: 20px;
+    ul {
+      margin: 10px 0;
+    }
     .diamond {
       position: relative;
       display: inline-block;
@@ -44,7 +50,7 @@ Experience - Saturn
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 80px;
     width: 100%;
     background: transparent;
@@ -68,6 +74,10 @@ Experience - Saturn
   }
   .tabs-title {
     position: relative;
+    float: none;
+    flex: 1 1 200px;
+    max-width: 360px;
+    margin: 5px;
     &.is-active {
       .boxstyle-container {
         box-shadow: inset 0px 0px 0px 5px #c8cdd0;
@@ -93,8 +103,10 @@ Experience - Saturn
     box-shadow: inset 0px 0px 0px 2px black;
   }
   .boxstyle-container {
-    width: 300px;
-    height: 100px;
+    height: 110px;
+    p {
+      padding: 5px 17px;
+    }
   }
   #app-match {
     li {
@@ -103,32 +115,12 @@ Experience - Saturn
   }
 }
 
-@include breakpoint(small) {
+@include breakpoint(large) {
   #experience-section {
-    height: auto;
-    margin-bottom: 100px;
-  }
-  #experience-section .tabs {
-    justify-content: center;
-  }
-  #experience-section #education-flex {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  #experience-section #education-flex ul {
-    margin: 10px 0;
-  }
-  #experience-section .tabs-title {
-    margin: 0 2px;
-  }
-  #experience-section .boxstyle-left {
-    display: none;
-  }
-  #experience-section .boxstyle-right {
-    display: none;
-  }
-  #experience-section .boxstyle-container {
-    width: 165px;
-    margin: 5px 0;
+    padding: 0 100px;
+    #education-flex {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
   }
 }

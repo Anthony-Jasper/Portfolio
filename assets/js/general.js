@@ -1,6 +1,10 @@
 jQuery(document).ready(function ($) {
   $(document).foundation();
-  // Theme JS here
+	// Theme JS here
+	gameToggle();
+	$(window).resize(function() {
+		gameToggle();
+	});
 
   $(".hamburger").click(function () {
     if ($(this).hasClass("is-active")) {
@@ -86,3 +90,12 @@ jQuery(document).ready(function ($) {
 			);
 	});
 });
+	function gameToggle(){
+		if(jQuery(document).width() >= 1459){
+			jQuery('#game-section').removeClass('small-screens');
+		}
+		else{
+			jQuery('#game-section').addClass('small-screens');
+		}
+	}
+

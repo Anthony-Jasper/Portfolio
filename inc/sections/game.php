@@ -1,5 +1,5 @@
 <section class="section-imp" id="game-section">
-	<p class="small-screens">View website in desktop mode to view and play the game</p>
+	<p class="small-screens-message">View website in desktop mode to view and play the game</p>
   <ul>
     <p class="h4">Menu Controls</p>
     <li>Move Up<span>W</span></li>

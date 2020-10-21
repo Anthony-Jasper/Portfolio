@@ -9,12 +9,6 @@ Combined Sections
   display: block;
   width: 100%;
 }
-.section-imp {
-  padding: 0 130px;
-}
-#experience-section {
-  height: 50em;
-}
 #cloudyne-section {
   height: 100em;
 }
@@ -22,8 +16,9 @@ Combined Sections
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20em;
-  .small-screens {
+  margin: 6em 0 3em;
+  padding-bottom: 50px;
+  .small-screens-message {
     display: none;
   }
   .h4 {
@@ -49,17 +44,11 @@ Combined Sections
   }
 }
 
-@include breakpoint(small) {
-  .section-imp {
-    padding: 0 10px;
+#game-section.small-screens {
+  > *:not(.small-screens-message) {
+    display: none;
   }
-  #game-section {
-    margin: 6em 0 3em;
-    .small-screens {
-      display: block;
-    }
-    > *:not(.small-screens) {
-      display: none;
-    }
+  .small-screens-message {
+    display: block;
   }
 }
