@@ -6,202 +6,41 @@
 
 	<h3 class="h3 hfont">Projects</h3>
 	<div id="project-timeline-container">
-		<div id="project-timeline" class="diamond">
-			<div class="diamond"></div>
-			<div class="cloudyne-longline"></div>
-	
-			<div class="cloudyne-mediumline"></div>
-			<div class="cloudyne-mediumline"></div>
-	
-			<div class="cloudyne-shortline"></div>
-			<div class="cloudyne-shortline"></div>
-	
-			<div class="diamond"><div></div>
-
-				<div class="border-box" id="project1">
-					<div class="project-container">
-						<div class="project-front">
-							<p class="h4 hfont">Cloudyne</p>
-							<p>A business that offers design and development for websites, hosting and SEO services.</p>
-							<div id="project-box-style">
-								<div class="boxstyle-lineleft"> <!-- Left -->
-									<div class="boxstyle-lineshort"></div> <!-- ShortLine -->
-									<div class="boxstyle-linelong"></div> <!-- Line -->
-									<div class="boxstyle-lineshort"></div> <!-- ShortLine -->
-								</div>
-								
-								<div class="boxstyle-diamond"></div> <!-- Diamond -->
-			
-								<div class="boxstyle-lineright"> <!-- Right-->
-									<div class="boxstyle-lineshort"></div> <!-- ShortLine -->
-									<div class="boxstyle-linelong"></div> <!-- Line -->
-									<div class="boxstyle-lineshort"></div> <!-- ShortLine -->
-								</div>
-							</div>
-						</div>
-						<div class="project-back">
-							<ul>LIKES
-								<li>WHMCS Intregation</li>
-								<li>Animations</li>
-							</ul>
-							<a href="https://www.cloudyne.co.uk" target="_blank" rel="noopener noreferrer">www.cloudyne.co.uk</a>
-							<ul>DISLIKES
-								<li>Content</li>
-								<li>Imagery</li>
-							</ul>
-						</div>
-					</div>
+		<div id="project-timeline">
+			<div class="border-box" id="project1">
+				<div>
+					<p class="h4 hfont">Cloudyne</p>
+					<a href="https://www.cloudyne.co.uk" target="_blank" rel="noopener noreferrer">www.cloudyne.co.uk</a>
 				</div>
-
 			</div>
-
-			<div class="diamond"><div></div>
-				<div class="border-box" id="project2">
-					<div class="project-container">
-						<div class="project-front">
-							<p class="h4 hfont">Shea-Me</p>
-							<p>An e-commerce site that sells shea body butter products that help invigorates the senses, reduce acne and other benefits to the skin.</p>
-							<div id="project-box-style">
-								<div class="boxstyle-lineleft"> <!-- Left -->
-									<div class="boxstyle-lineshort"></div> <!-- ShortLine -->
-									<div class="boxstyle-linelong"></div> <!-- Line -->
-									<div class="boxstyle-lineshort"></div> <!-- ShortLine -->
-								</div>
-								
-								<div class="boxstyle-diamond"></div> <!-- Diamond -->
-			
-								<div class="boxstyle-lineright"> <!-- Right-->
-									<div class="boxstyle-lineshort"></div> <!-- ShortLine -->
-									<div class="boxstyle-linelong"></div> <!-- Line -->
-									<div class="boxstyle-lineshort"></div> <!-- ShortLine -->
-								</div>
-							</div>
-						</div>
-						<div class="project-back">
-							<ul>LIKES
-								<li>Modern Layout</li>
-								<li>Micro Animations</li>
-							</ul>
-							<a href="https://www.shea-me.co.uk" target="_blank" rel="noopener noreferrer">www.shea-me.co.uk</a>
-							<ul>DISLIKES
-								<li>Cluttered</li>
-								<li>Poor Imagery</li>
-							</ul>
-						</div>
-					</div>
+			<div class="border-box" id="project2">
+				<div>
+					<p class="h4 hfont">Shea-Me</p>
+					<a href="https://www.shea-me.co.uk" target="_blank" rel="noopener noreferrer">www.shea-me.co.uk</a>
 				</div>
-
 			</div>
-			<div class="diamond"><div></div>
-
-				<div class="border-box" id="project3">
-					<div class="project-container">
-						<div class="project-front">
-							<p class="h4 hfont">Sherwood &amp; Hope</p>
-							<p>Independant Funeral Directors in Kent, that handle everything from arranging a funeral, to on the day transportation of a loved one.</p>
-							<div id="project-box-style">
-								<div class="boxstyle-lineleft"> <!-- Left -->
-									<div class="boxstyle-lineshort"></div> <!-- ShortLine -->
-									<div class="boxstyle-linelong"></div> <!-- Line -->
-									<div class="boxstyle-lineshort"></div> <!-- ShortLine -->
-								</div>
-								
-								<div class="boxstyle-diamond"></div> <!-- Diamond -->
-			
-								<div class="boxstyle-lineright"> <!-- Right-->
-									<div class="boxstyle-lineshort"></div> <!-- ShortLine -->
-									<div class="boxstyle-linelong"></div> <!-- Line -->
-									<div class="boxstyle-lineshort"></div> <!-- ShortLine -->
-								</div>
-							</div>
-						</div>
-						<div class="project-back">
-							<ul>LIKES
-								<li>One Page</li>
-								<li>Detailed Content</li>
-							</ul>
-							<a href="https://www.sherwoodandhope.co.uk" target="_blank" rel="noopener noreferrer">www.sherwoodandhope.co.uk</a>
-							<ul>DISLIKES
-								<li>Colour Scheme</li>
-								<li>UX</li>
-							</ul>
-						</div>
-					</div>
+			<div class="border-box" id="project3">
+				<div>
+					<p class="h4 hfont">Sherwood &amp; Hope</p>
+					<a href="https://www.sherwoodandhope.co.uk" target="_blank" rel="noopener noreferrer">www.sherwoodandhope.co.uk</a>
 				</div>
-		
 			</div>
-			<div class="diamond"><div></div>
-
-				<div class="border-box" id="project4">
-					<div class="project-container">
-						<div class="project-front">
-							<p class="h4 hfont">Pout &amp; Sparkle</p>
-							<p>A beauty studio who’s qualified as a hairdresser, beautician and elite technician in plasma pen-fibroblasting.</p>
-							<div id="project-box-style">
-								<div class="boxstyle-lineleft"> <!-- Left -->
-									<div class="boxstyle-lineshort"></div> <!-- ShortLine -->
-									<div class="boxstyle-linelong"></div> <!-- Line -->
-									<div class="boxstyle-lineshort"></div> <!-- ShortLine -->
-								</div>
-								
-								<div class="boxstyle-diamond"></div> <!-- Diamond -->
-			
-								<div class="boxstyle-lineright"> <!-- Right-->
-									<div class="boxstyle-lineshort"></div> <!-- ShortLine -->
-									<div class="boxstyle-linelong"></div> <!-- Line -->
-									<div class="boxstyle-lineshort"></div> <!-- ShortLine -->
-								</div>
-							</div>
-						</div>
-						<div class="project-back">
-							<ul>LIKES
-								<li>Colour Scheme</li>
-								<li>Section Seperators</li>
-							</ul>
-							<a href="https://www.poutandsparkle.co.uk" target="_blank" rel="noopener noreferrer">www.poutandsparkle.co.uk</a>
-							<ul>DISLIKES
-								<li>Button Sparkles</li>
-								<li>Page Layout</li>
-							</ul>
-						</div>
-					</div>
+			<div class="border-box" id="project4">
+				<div>
+					<p class="h4 hfont">Pout &amp; Sparkle</p>
+					<a href="https://www.poutandsparkle.co.uk" target="_blank" rel="noopener noreferrer">www.poutandsparkle.co.uk</a>
 				</div>
-		
 			</div>
-			<div class="diamond"><div></div>
-				<div class="border-box" id="project5">
-					<div class="project-container">
-						<div class="project-front">
-							<p class="h4 hfont">Medway Vegan festivals</p>
-							<p>Promotes and Hosts Vegan Festivities across Medway, Kent.</p>
-							<div id="project-box-style">
-								<div class="boxstyle-lineleft"> <!-- Left -->
-									<div class="boxstyle-lineshort"></div> <!-- ShortLine -->
-									<div class="boxstyle-linelong"></div> <!-- Line -->
-									<div class="boxstyle-lineshort"></div> <!-- ShortLine -->
-								</div>
-								
-								<div class="boxstyle-diamond"></div> <!-- Diamond -->
-			
-								<div class="boxstyle-lineright"> <!-- Right-->
-									<div class="boxstyle-lineshort"></div> <!-- ShortLine -->
-									<div class="boxstyle-linelong"></div> <!-- Line -->
-									<div class="boxstyle-lineshort"></div> <!-- ShortLine -->
-								</div>
-							</div>
-						</div>
-						<div class="project-back">
-							<ul>LIKES
-								<li>Page Layout</li>
-								<li>Minimalist</li>
-							</ul>
-							<a href="https://www.projects.cloudyne.co.uk/medwayveganfestival" target="_blank" rel="noopener noreferrer">Still in Development</a>
-							<ul>DISLIKES
-								<li>UX</li>
-								<li>Booking System</li>
-							</ul>
-						</div>
-					</div>
+			<div class="border-box" id="project5">
+				<div>
+					<p class="h4 hfont">Medway Vegan festivals</p>
+					<a href="https://www.projects.cloudyne.co.uk/medwayveganfestival" target="_blank" rel="noopener noreferrer">Still in Development</a>
+				</div>
+			</div>
+			<div class="border-box" id="project6">
+				<div>
+					<p class="h4 hfont">Helene Simpson Photography</p>
+					<a href="https://www.helenesimpsonphotography.com/" target="_blank" rel="noopener noreferrer">www.helenesimpsonphotography.com</a>
 				</div>
 			</div>
 		</div>

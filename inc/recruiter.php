@@ -166,7 +166,7 @@
         </div>
 			</div>
 			<div class="dp-cell">
-				<img src="<?php bloginfo('template_url'); ?>/assets/images/medway_background.jpg" />
+				<img src="<?php bloginfo('template_url'); ?>/assets/images/helene-background.jpg" />
 				<div class="dp-cell-content">
 					<p class="hfont h5">Helene Simpson Photography</p>
 					<div>
@@ -190,8 +190,7 @@
 							<li>On-Going Updates:<span>No</span></li>
 						</ul>
 					</div>
-					<a class="prev-website" href="https://projects.cloudyne.co.uk/medwayveganfestival" target="_blank">Under
-						Development</a>
+					<a class="prev-website" href="https://www.helenesimpsonphotography.com" target="_blank">www.helenesimpsonphotography.com</a>
 				</div>
 			</div>
     </div>
@@ -237,10 +236,6 @@
 			<!-- ORBIT - ART -->
 			<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
 				<div class="orbit-wrapper">
-					<div class="orbit-controls">
-						<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-						<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-					</div>
 					<ul class="orbit-container">
 						<li class="is-active orbit-slide">
 							<figure class="orbit-figure">
@@ -315,10 +310,6 @@
 			<!-- ORBIT - COMMERCE -->
 			<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
 				<div class="orbit-wrapper">
-					<div class="orbit-controls">
-						<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-						<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-					</div>
 					<ul class="orbit-container">
 						<li class="is-active orbit-slide">
 							<figure class="orbit-figure">
@@ -414,10 +405,6 @@
 			<!-- ORBIT - GAME -->
 			<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
 				<div class="orbit-wrapper">
-					<div class="orbit-controls">
-						<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-						<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-					</div>
 					<ul class="orbit-container">
 						<li class="is-active orbit-slide">
 							<figure class="orbit-figure">
@@ -478,10 +465,6 @@
 			<!-- ORBIT - STREAMER -->
 			<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
 				<div class="orbit-wrapper">
-					<div class="orbit-controls">
-						<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-						<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-					</div>
 					<ul class="orbit-container">
 						<li class="is-active orbit-slide">
 							<figure class="orbit-figure">

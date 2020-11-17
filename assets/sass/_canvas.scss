@@ -105,28 +105,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 100px;
   .beams,
   .h5 {
     width: 100%;
-  }
-  .orbit-bullets {
-    display: none;
-  }
-  .orbit-previous {
-    left: -46px;
-    cursor: pointer;
-  }
-  .orbit-next {
-    right: -46px;
-    cursor: pointer;
-  }
-  .orbit-previous:hover,
-  .orbit-next:hover,
-  .orbit-previous:active,
-  .orbit-next:active,
-  .orbit-previous:focus,
-  .orbit-next:focus {
-    background: $primary-color;
   }
 }
 .orbit {
@@ -137,9 +119,15 @@
   .orbit-image {
     object-fit: cover;
   }
-}
-.orbit-container {
-  height: 400px;
+  .orbit-wrapper {
+    margin-top: 50px;
+  }
+  .orbit-bullets {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
 }
 @include breakpoint(large) {
   #triangle-topleft,
@@ -174,25 +162,8 @@
   .position-left {
     width: 100vw;
   }
-  #designer-projects .orbit-previous {
-    left: -7px;
-  }
-  #designer-projects .orbit-next {
-    right: -8px;
-  }
-  .orbit-previous,
-  .orbit-next {
-    top: 90%;
-  }
-  .orbit {
-    width: 95%;
-    height: 250px;
-  }
   .orbit-wrapper,
   .orbit-container {
     height: inherit;
-  }
-  .orbit .orbit-image {
-    height: 250px;
   }
 }
